@@ -1,0 +1,5976 @@
+# The configurations that used for the recording, feel free to edit them
+config:
+
+  # Specify a command to be executed
+  # like `/bin/bash -l`, `ls`, or any other commands
+  # the default is bash for Linux
+  # or powershell.exe for Windows
+  command: powershell.exe
+  
+  # Specify the current working directory path
+  # the default is the current working directory path
+  cwd: C:\Users\baeba
+  
+  # Export additional ENV variables
+  env:
+    recording: true
+  
+  # Explicitly set the number of columns
+  # or use `auto` to take the current
+  # number of columns of your shell
+  cols: 64
+  
+  # Explicitly set the number of rows
+  # or use `auto` to take the current
+  # number of rows of your shell
+  rows: 37
+  
+  # Amount of times to repeat GIF
+  # If value is -1, play once
+  # If value is 0, loop indefinitely
+  # If value is a positive number, loop n times
+  repeat: 0
+  
+  # Quality
+  # 1 - 100
+  quality: 100
+  
+  # Delay between frames in ms
+  # If the value is `auto` use the actual recording delays
+  frameDelay: auto
+  
+  # Maximum delay between frames in ms
+  # Ignored if the `frameDelay` isn't set to `auto`
+  # Set to `auto` to prevent limiting the max idle time
+  maxIdleTime: 2000
+  
+  # The surrounding frame box
+  # The `type` can be null, window, floating, or solid`
+  # To hide the title use the value null
+  # Don't forget to add a backgroundColor style with a null as type
+  frameBox:
+    type: floating
+    title: Terminalizer
+    style:
+      border: 0px black solid
+      # boxShadow: none
+      # margin: 0px
+  
+  # Add a watermark image to the rendered gif
+  # You need to specify an absolute path for
+  # the image on your machine or a URL, and you can also
+  # add your own CSS styles
+  watermark:
+    imagePath: null
+    style:
+      position: absolute
+      right: 15px
+      bottom: 15px
+      width: 100px
+      opacity: 0.9
+  
+  # Cursor style can be one of
+  # `block`, `underline`, or `bar`
+  cursorStyle: block
+  
+  # Font family
+  # You can use any font that is installed on your machine
+  # in CSS-like syntax
+  fontFamily: "Monaco, Lucida Console, Ubuntu Mono, Monospace"
+  
+  # The size of the font
+  fontSize: 12
+  
+  # The height of lines
+  lineHeight: 1
+  
+  # The spacing between letters
+  letterSpacing: 0
+  
+  # Theme
+  theme:
+    background: "transparent"
+    foreground: "#afafaf"
+    cursor: "#c7c7c7"
+    black: "#232628"
+    red: "#fc4384"
+    green: "#b3e33b"
+    yellow: "#ffa727"
+    blue: "#75dff2"
+    magenta: "#ae89fe"
+    cyan: "#708387"
+    white: "#d5d5d0"
+    brightBlack: "#626566"
+    brightRed: "#ff7fac"
+    brightGreen: "#c8ed71"
+    brightYellow: "#ebdf86"
+    brightBlue: "#75dff2"
+    brightMagenta: "#ae89fe"
+    brightCyan: "#b1c6ca"
+    brightWhite: "#f9f9f4"
+  
+# Records, feel free to edit them
+records:
+  - delay: 1730
+    content: "\e[?9001h\e[?1004h"
+  - delay: 965
+    content: "\e[?25l\e[2J\e[m\e[HWindows PowerShell\r\nCopyright (C) Microsoft Corporation. All rights reserved.\e[4;1HInstall the latest PowerShell for new features and improvements! https://aka.ms/PSWindows\e]0;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\powershell.exe\a\e[?25h"
+  - delay: 12
+    content: "\e[?25l\e[7;1H\e[?25h"
+  - delay: 1500
+    content: 'PS C:\Users\baeba> '
+  - delay: 2660
+    content: "\e[?25l"
+  - delay: 17
+    content: "\e[93mm\e[?25h"
+  - delay: 76
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\bmy\e[?25h"
+  - delay: 236
+    content: "\e[m\e[?25l"
+  - delay: 26
+    content: "\e[93m\e[7;20Hmys\e[?25h"
+  - delay: 166
+    content: "\e[m\e[?25l"
+  - delay: 8
+    content: "\e[93m\e[7;20Hmysq\e[?25h"
+  - delay: 304
+    content: "\e[m\e[?25l"
+  - delay: 10
+    content: "\e[93m\e[7;20Hmysql\e[?25h"
+  - delay: 158
+    content: "\e[m\e[?25l"
+  - delay: 20
+    content: "\e[93m\e[7;20Hmysql \e[?25h"
+  - delay: 108
+    content: "\e[m\e[?25l"
+  - delay: 16
+    content: "\e[93m\e[7;20Hmysql \e[37m-\e[?25h"
+  - delay: 278
+    content: "\e[m\e[?25l"
+  - delay: 23
+    content: "\e[93m\e[7;20Hmysql \e[90m-u\e[?25h"
+  - delay: 182
+    content: "\e[m\e[?25l"
+  - delay: 17
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[?25h"
+  - delay: 192
+    content: "\e[m\e[?25l"
+  - delay: 19
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mr\e[?25h"
+  - delay: 97
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mro\e[?25h"
+  - delay: 98
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mroo\e[?25h"
+  - delay: 88
+    content: "\e[m\e[?25l"
+  - delay: 12
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mroot\e[?25h"
+  - delay: 313
+    content: "\e[m\e[?25l"
+  - delay: 14
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mroot \e[?25h"
+  - delay: 789
+    content: "\e[m\e[?25l"
+  - delay: 40
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mroot -\e[?25h"
+  - delay: 108
+    content: "\e[m\e[?25l"
+  - delay: 18
+    content: "\e[93m\e[7;20Hmysql \e[90m-u \e[37mroot \e[90m-p\e[?25h"
+  - delay: 712
+    content: "\e[m"
+  - delay: 24
+    content: "\r\n"
+  - delay: 141
+    content: E
+  - delay: 22
+    content: 'nter password: '
+  - delay: 1174
+    content: '*'
+  - delay: 155
+    content: '*'
+  - delay: 210
+    content: '*'
+  - delay: 206
+    content: '*'
+  - delay: 267
+    content: "\r\n"
+  - delay: 210
+    content: Welcome to the MariaDB monitor.  Commands end with ; or \g.
+  - delay: 20
+    content: "\r\n"
+  - delay: 16
+    content: "\e[?25lYour MariaDB connection id is 8\r\nServer version: 11.8.3-MariaDB mariadb.org binary distribution\e[13;1HCopyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.\e[16;1HType 'help;' or '\\h' for help. Type '\\c' to clear the current input statement.\e[19;1HMariaDB [(none)]> \e[?25h"
+  - delay: 1440
+    content: c
+  - delay: 239
+    content: r
+  - delay: 167
+    content: e
+  - delay: 241
+    content: a
+  - delay: 76
+    content: t
+  - delay: 139
+    content: e
+  - delay: 307
+    content: ' '
+  - delay: 704
+    content: d
+  - delay: 169
+    content: a
+  - delay: 132
+    content: t
+  - delay: 81
+    content: a
+  - delay: 160
+    content: b
+  - delay: 85
+    content: a
+  - delay: 123
+    content: s
+  - delay: 342
+    content: e
+  - delay: 16873
+    content: ' '
+  - delay: 436
+    content: f
+  - delay: 293
+    content: a
+  - delay: 566
+    content: "\b \b"
+  - delay: 310
+    content: l
+  - delay: 80
+    content: a
+  - delay: 110
+    content: s
+  - delay: 151
+    content: h
+  - delay: 480
+    content: "\b \b"
+  - delay: 884
+    content: l
+  - delay: 2659
+    content: "\b \b"
+  - delay: 186
+    content: h
+  - delay: 527
+    content: "\b \b"
+  - delay: 176
+    content: "\b \b"
+  - delay: 129
+    content: "\b \b"
+  - delay: 146
+    content: "\b \b"
+  - delay: 180
+    content: "\b \b"
+  - delay: 439
+    content: d
+  - delay: 185
+    content: b
+  - delay: 445
+    content: _
+  - delay: 687
+    content: f
+  - delay: 118
+    content: l
+  - delay: 145
+    content: a
+  - delay: 133
+    content: s
+  - delay: 209
+    content: h
+  - delay: 105
+    content: a
+  - delay: 682
+    content: l
+  - delay: 107
+    content: e
+  - delay: 1597
+    content: ;
+  - delay: 350
+    content: ' '
+  - delay: 718
+    content: u
+  - delay: 102
+    content: s
+  - delay: 219
+    content: e
+  - delay: 309
+    content: ' '
+  - delay: 528
+    content: d
+  - delay: 194
+    content: f
+  - delay: 553
+    content: "\b \b"
+  - delay: 230
+    content: b
+  - delay: 526
+    content: _
+  - delay: 1247
+    content: f
+  - delay: 105
+    content: l
+  - delay: 118
+    content: a
+  - delay: 109
+    content: s
+  - delay: 160
+    content: h
+  - delay: 117
+    content: a
+  - delay: 961
+    content: "\b \b"
+  - delay: 363
+    content: "\b \b"
+  - delay: 878
+    content: h
+  - delay: 292
+    content: s
+  - delay: 162
+    content: a
+  - delay: 120
+    content: k
+  - delay: 625
+    content: "\b \b"
+  - delay: 291
+    content: l
+  - delay: 150
+    content: e
+  - delay: 427
+    content: "\b"
+  - delay: 502
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 116
+    content: "\b"
+  - delay: 450
+    content: "\b"
+  - delay: 572
+    content: "\bflashale; use db_flashsale \e[19;37H"
+  - delay: 181
+    content: "\e[?25l\bflashale; use db_flashsale \e[19;36H\e[?25h"
+  - delay: 155
+    content: "\e[?25l\bflashale; use db_flashsale \e[19;35H\e[?25h"
+  - delay: 938
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 25
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 195
+    content: "\e[1C"
+  - delay: 629
+    content: "\b"
+  - delay: 642
+    content: "\e[?25l\bflashsale \e[19;51H\e[?25h"
+  - delay: 164
+    content: "\e[?25l\bflashsale \e[19;50H\e[?25h"
+  - delay: 193
+    content: "\e[?25l\bflashsale \e[19;49H\e[?25h"
+  - delay: 1028
+    content: "\e[1C"
+  - delay: 199
+    content: "\e[1C"
+  - delay: 177
+    content: "\e[1C"
+  - delay: 158
+    content: "\e[1C"
+  - delay: 165
+    content: "\e[1C"
+  - delay: 142
+    content: "\e[1C"
+  - delay: 157
+    content: "\e[1C"
+  - delay: 144
+    content: "\e[1C"
+  - delay: 316
+    content: "\e[1C"
+  - delay: 648
+    content: ;
+  - delay: 117
+    content: ' '
+  - delay: 665
+    content: c
+  - delay: 199
+    content: r
+  - delay: 187
+    content: e
+  - delay: 230
+    content: a
+  - delay: 93
+    content: t
+  - delay: 124
+    content: e
+  - delay: 2690
+    content: "\r \r"
+  - delay: 674
+    content: "\e[?25l\e[19;64H \e[?25h"
+  - delay: 576
+    content: "\e[19;63H \e[19;63H"
+  - delay: 177
+    content: "\b \b"
+  - delay: 154
+    content: "\b \b"
+  - delay: 146
+    content: "\b \b"
+  - delay: 313
+    content: "\b \b"
+  - delay: 430
+    content: "\r\n"
+  - delay: 25
+    content: 'Query OK, 1 row affected (0.025 sec)'
+  - delay: 12
+    content: "\e[?25l\e[22;1H\e[?25h"
+  - delay: 16
+    content: "ERROR 1049 (42000): Unknown database 'flashsale'\r\nMariaDB [(none)]> "
+  - delay: 2711
+    content: create database flashale; use flashsale;
+  - delay: 2252
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 134
+    content: "\b"
+  - delay: 192
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 166
+    content: "\b"
+  - delay: 139
+    content: "\b"
+  - delay: 153
+    content: "\b"
+  - delay: 375
+    content: "\b"
+  - delay: 321
+    content: "\e[?25lsale; use flashsale;\e[23;41H\e[?25h"
+  - delay: 397
+    content: "\e[1C"
+  - delay: 501
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 139
+    content: "\e[1C"
+  - delay: 198
+    content: "\e[1C"
+  - delay: 145
+    content: "\e[1C"
+  - delay: 157
+    content: "\e[1C"
+  - delay: 182
+    content: "\e[1C"
+  - delay: 367
+    content: "\r\n"
+  - delay: 12
+    content: "\e[?25lQuery OK, 1 row affected (0.006 sec)\e[26;1HDatabase changed\r\nMariaDB [flashsale]> \e[?25h"
+  - delay: 1486
+    content: c
+  - delay: 219
+    content: r
+  - delay: 147
+    content: e
+  - delay: 197
+    content: s
+  - delay: 83
+    content: t
+  - delay: 96
+    content: e
+  - delay: 535
+    content: "\b \b"
+  - delay: 204
+    content: "\b \b"
+  - delay: 133
+    content: "\b \b"
+  - delay: 136
+    content: "\b \b"
+  - delay: 650
+    content: e
+  - delay: 182
+    content: a
+  - delay: 204
+    content: t
+  - delay: 179
+    content: e
+  - delay: 216
+    content: ' '
+  - delay: 216
+    content: t
+  - delay: 162
+    content: a
+  - delay: 107
+    content: b
+  - delay: 273
+    content: l
+  - delay: 494
+    content: e
+  - delay: 296
+    content: ' '
+  - delay: 1121
+    content: p
+  - delay: 131
+    content: r
+  - delay: 233
+    content: u
+  - delay: 965
+    content: "\b \b"
+  - delay: 551
+    content: o
+  - delay: 117
+    content: s
+  - delay: 639
+    content: "\b \b"
+  - delay: 164
+    content: d
+  - delay: 152
+    content: u
+  - delay: 179
+    content: k
+  - delay: 555
+    content: (
+  - delay: 661
+    content: i
+  - delay: 141
+    content: d
+  - delay: 345
+    content: _
+  - delay: 507
+    content: p
+  - delay: 126
+    content: r
+  - delay: 269
+    content: o
+  - delay: 139
+    content: d
+  - delay: 144
+    content: u
+  - delay: 230
+    content: k
+  - delay: 293
+    content: ' '
+  - delay: 171
+    content: i
+  - delay: 134
+    content: 'n'
+  - delay: 663
+    content: t
+  - delay: 205
+    content: ' '
+  - delay: 146
+    content: p
+  - delay: 122
+    content: r
+  - delay: 139
+    content: m
+  - delay: 124
+    content: a
+  - delay: 212
+    content: r
+  - delay: 339
+    content: 'y'
+  - delay: 326
+    content: ' '
+  - delay: 124
+    content: k
+  - delay: 800
+    content: "\b"
+  - delay: 165
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 143
+    content: "\b"
+  - delay: 153
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 1270
+    content: "imary k\e[27;59H"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 496
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 148
+    content: "\e[1C"
+  - delay: 360
+    content: "\r\n"
+  - delay: 327
+    content: e
+  - delay: 220
+    content: 'y'
+  - delay: 202
+    content: ' '
+  - delay: 207
+    content: a
+  - delay: 91
+    content: u
+  - delay: 129
+    content: t
+  - delay: 131
+    content: o
+  - delay: 185
+    content: ' '
+  - delay: 153
+    content: i
+  - delay: 169
+    content: 'n'
+  - delay: 782
+    content: "\b \b"
+  - delay: 270
+    content: "\b \b"
+  - delay: 305
+    content: "\b \b"
+  - delay: 516
+    content: _
+  - delay: 1212
+    content: i
+  - delay: 226
+    content: 'n'
+  - delay: 287
+    content: c
+  - delay: 265
+    content: r
+  - delay: 147
+    content: e
+  - delay: 671
+    content: m
+  - delay: 112
+    content: e
+  - delay: 672
+    content: 'n'
+  - delay: 154
+    content: t
+  - delay: 672
+    content: ','
+  - delay: 306
+    content: ' '
+  - delay: 564
+    content: 'n'
+  - delay: 111
+    content: a
+  - delay: 72
+    content: m
+  - delay: 92
+    content: a
+  - delay: 375
+    content: _
+  - delay: 644
+    content: p
+  - delay: 104
+    content: r
+  - delay: 175
+    content: o
+  - delay: 893
+    content: d
+  - delay: 135
+    content: u
+  - delay: 202
+    content: k
+  - delay: 139
+    content: ' '
+  - delay: 418
+    content: v
+  - delay: 169
+    content: a
+  - delay: 168
+    content: r
+  - delay: 184
+    content: c
+  - delay: 87
+    content: h
+  - delay: 101
+    content: a
+  - delay: 1019
+    content: r
+  - delay: 750
+    content: (
+  - delay: 497
+    content: '5'
+  - delay: 14
+    content: '6'
+  - delay: 121
+    content: '0'
+  - delay: 300
+    content: )
+  - delay: 1218
+    content: ','
+  - delay: 2027
+    content: ' '
+  - delay: 109
+    content: h
+  - delay: 826
+    content: "\b \b"
+  - delay: 132
+    content: "\b \b"
+  - delay: 500
+    content: ' '
+  - delay: 272
+    content: h
+  - delay: 86
+    content: a
+  - delay: 143
+    content: e
+  - delay: 602
+    content: "\b \b"
+  - delay: 135
+    content: r
+  - delay: 179
+    content: g
+  - delay: 156
+    content: a
+  - delay: 530
+    content: _
+  - delay: 152
+    content: a
+  - delay: 132
+    content: s
+  - delay: 106
+    content: ;
+  - delay: 657
+    content: "\b \b"
+  - delay: 768
+    content: l
+  - delay: 197
+    content: i
+  - delay: 105
+    content: ' '
+  - delay: 245
+    content: v
+  - delay: 157
+    content: a
+  - delay: 669
+    content: r
+  - delay: 354
+    content: "\b \b"
+  - delay: 182
+    content: "\b \b"
+  - delay: 114
+    content: "\b \b"
+  - delay: 517
+    content: i
+  - delay: 79
+    content: 'n'
+  - delay: 170
+    content: t
+  - delay: 699
+    content: ','
+  - delay: 1494
+    content: "\b \b"
+  - delay: 184
+    content: "\b \b"
+  - delay: 1303
+    content: t
+  - delay: 570
+    content: )
+  - delay: 524
+    content: ;
+  - delay: 141
+    content: ' '
+  - delay: 1216
+    content: c
+  - delay: 217
+    content: r
+  - delay: 166
+    content: e
+  - delay: 192
+    content: a
+  - delay: 68
+    content: t
+  - delay: 108
+    content: e
+  - delay: 228
+    content: ' '
+  - delay: 337
+    content: t
+  - delay: 197
+    content: a
+  - delay: 79
+    content: b
+  - delay: 306
+    content: ;
+  - delay: 332
+    content: e
+  - delay: 288
+    content: ' '
+  - delay: 714
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 155
+    content: l
+  - delay: 277
+    content: e
+  - delay: 190
+    content: ' '
+  - delay: 101
+    content: p
+  - delay: 118
+    content: r
+  - delay: 165
+    content: o
+  - delay: 132
+    content: m
+  - delay: 115
+    content: o
+  - delay: 1225
+    content: "\b"
+  - delay: 592
+    content: "\b"
+  - delay: 185
+    content: "\b"
+  - delay: 146
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 156
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 149
+    content: "\b"
+  - delay: 674
+    content: "\e[1C"
+  - delay: 473
+    content: "\e[1C"
+  - delay: 753
+    content: "\b"
+  - delay: 382
+    content: "\e[?25l\be promo \e[29;10H\e[?25h"
+  - delay: 523
+    content: "\e[?25l\be promo \e[29;9H\e[?25h"
+  - delay: 570
+    content: "\e[?25lle promo\e[29;10H\e[?25h"
+  - delay: 407
+    content: "\e[1C"
+  - delay: 503
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 118
+    content: "\e[1C"
+  - delay: 162
+    content: "\e[1C"
+  - delay: 180
+    content: "\e[1C"
+  - delay: 535
+    content: "\e[1C"
+  - delay: 216
+    content: ' '
+  - delay: 468
+    content: "\b \b"
+  - delay: 653
+    content: (
+  - delay: 601
+    content: i
+  - delay: 167
+    content: s
+  - delay: 632
+    content: "\b \b"
+  - delay: 168
+    content: d
+  - delay: 875
+    content: _
+  - delay: 634
+    content: o
+  - delay: 588
+    content: "\b \b"
+  - delay: 275
+    content: p
+  - delay: 88
+    content: r
+  - delay: 123
+    content: o
+  - delay: 98
+    content: m
+  - delay: 99
+    content: o
+  - delay: 651
+    content: ' '
+  - delay: 218
+    content: i
+  - delay: 95
+    content: 'n'
+  - delay: 155
+    content: t
+  - delay: 189
+    content: ' '
+  - delay: 116
+    content: p
+  - delay: 148
+    content: r
+  - delay: 159
+    content: i
+  - delay: 200
+    content: m
+  - delay: 97
+    content: a
+  - delay: 192
+    content: r
+  - delay: 398
+    content: 'y'
+  - delay: 255
+    content: ' '
+  - delay: 224
+    content: k
+  - delay: 185
+    content: w
+  - delay: 470
+    content: e
+  - delay: 180
+    content: t
+  - delay: 484
+    content: "\b \b"
+  - delay: 152
+    content: "\b \b"
+  - delay: 428
+    content: e
+  - delay: 154
+    content: t
+  - delay: 303
+    content: "\b \b"
+  - delay: 181
+    content: "\b \b"
+  - delay: 119
+    content: "\b \b"
+  - delay: 106
+    content: e
+  - delay: 193
+    content: 'y'
+  - delay: 287
+    content: ' '
+  - delay: 490
+    content: s
+  - delay: 171
+    content: u
+  - delay: 155
+    content: 'y'
+  - delay: 147
+    content: o
+  - delay: 542
+    content: "\b \b"
+  - delay: 417
+    content: "\b \b"
+  - delay: 184
+    content: "\b \b"
+  - delay: 236
+    content: "\b \b"
+  - delay: 197
+    content: a
+  - delay: 289
+    content: u
+  - delay: 135
+    content: t
+  - delay: 139
+    content: o
+  - delay: 407
+    content: _
+  - delay: 284
+    content: i
+  - delay: 116
+    content: 'n'
+  - delay: 249
+    content: c
+  - delay: 251
+    content: r
+  - delay: 171
+    content: e
+  - delay: 64
+    content: m
+  - delay: 90
+    content: e
+  - delay: 104
+    content: 'n'
+  - delay: 516
+    content: t
+  - delay: 447
+    content: ','
+  - delay: 459
+    content: ' '
+  - delay: 690
+    content: 'n'
+  - delay: 87
+    content: a
+  - delay: 100
+    content: m
+  - delay: 64
+    content: a
+  - delay: 837
+    content: _
+  - delay: 252
+    content: p
+  - delay: 162
+    content: r
+  - delay: 253
+    content: o
+  - delay: 205
+    content: d
+  - delay: 136
+    content: u
+  - delay: 200
+    content: k
+  - delay: 164
+    content: ' '
+  - delay: 745
+    content: a
+  - delay: 166
+    content: r
+  - delay: 208
+    content: c
+  - delay: 131
+    content: h
+  - delay: 990
+    content: "\b \b"
+  - delay: 158
+    content: "\b \b"
+  - delay: 141
+    content: "\b \b"
+  - delay: 133
+    content: "\b \b"
+  - delay: 426
+    content: c
+  - delay: 411
+    content: "\b \b"
+  - delay: 120
+    content: v
+  - delay: 194
+    content: A
+  - delay: 107
+    content: E
+  - delay: 21
+    content: R
+  - delay: 289
+    content: G
+  - delay: 79
+    content: A
+  - delay: 896
+    content: "\b \b"
+  - delay: 155
+    content: "\b \b"
+  - delay: 145
+    content: "\b \b"
+  - delay: 151
+    content: "\b \b"
+  - delay: 460
+    content: "\b \b"
+  - delay: 353
+    content: a
+  - delay: 282
+    content: r
+  - delay: 351
+    content: c
+  - delay: 151
+    content: h
+  - delay: 62
+    content: a
+  - delay: 160
+    content: a
+  - delay: 20
+    content: r
+  - delay: 935
+    content: "\b \b"
+  - delay: 154
+    content: "\b \b"
+  - delay: 96
+    content: r
+  - delay: 2240
+    content: (
+  - delay: 1309
+    content: '5'
+  - delay: 157
+    content: '0'
+  - delay: 387
+    content: )
+  - delay: 629
+    content: ','
+  - delay: 255
+    content: ' '
+  - delay: 3800
+    content: d
+  - delay: 479
+    content: i
+  - delay: 145
+    content: s
+  - delay: 111
+    content: o
+  - delay: 583
+    content: k
+  - delay: 275
+    content: "\b \b"
+  - delay: 321
+    content: "\b \b"
+  - delay: 335
+    content: k
+  - delay: 171
+    content: o
+  - delay: 319
+    content: 'n'
+  - delay: 511
+    content: _
+  - delay: 714
+    content: e
+  - delay: 132
+    content: r
+  - delay: 218
+    content: s
+  - delay: 137
+    content: w
+  - delay: 96
+    content: 'n'
+  - delay: 467
+    content: "\b \b"
+  - delay: 166
+    content: "\b \b"
+  - delay: 144
+    content: "\b \b"
+  - delay: 141
+    content: "\b \b"
+  - delay: 310
+    content: "\b \b"
+  - delay: 300
+    content: p
+  - delay: 140
+    content: e
+  - delay: 132
+    content: r
+  - delay: 221
+    content: s
+  - delay: 139
+    content: e
+  - delay: 101
+    content: 'n'
+  - delay: 459
+    content: ' '
+  - delay: 664
+    content: v
+  - delay: 557
+    content: "\b \b"
+  - delay: 321
+    content: i
+  - delay: 87
+    content: 'n'
+  - delay: 149
+    content: t
+  - delay: 1379
+    content: )
+  - delay: 456
+    content: ;
+  - delay: 385
+    content: ' '
+  - delay: 1358
+    content: c
+  - delay: 208
+    content: r
+  - delay: 175
+    content: e
+  - delay: 266
+    content: a
+  - delay: 56
+    content: t
+  - delay: 149
+    content: e
+  - delay: 393
+    content: ' '
+  - delay: 222
+    content: t
+  - delay: 177
+    content: s
+  - delay: 109
+    content: b
+  - delay: 382
+    content: "\b \b"
+  - delay: 146
+    content: "\b \b"
+  - delay: 145
+    content: "\b \b"
+  - delay: 564
+    content: t
+  - delay: 243
+    content: a
+  - delay: 86
+    content: b
+  - delay: 247
+    content: l
+  - delay: 70
+    content: e
+  - delay: 199
+    content: ' '
+  - delay: 185
+    content: p
+  - delay: 101
+    content: e
+  - delay: 212
+    content: 'n'
+  - delay: 177
+    content: j
+  - delay: 155
+    content: u
+  - delay: 102
+    content: a
+  - delay: 136
+    content: l
+  - delay: 48
+    content: a
+  - delay: 155
+    content: 'n'
+  - delay: 696
+    content: (
+  - delay: 628
+    content: '-'
+  - delay: 619
+    content: "\b \e[30;63H"
+  - delay: 519
+    content: i
+  - delay: 120
+    content: f
+  - delay: 465
+    content: "\e[?25l\e[30;64H \e[?25h"
+  - delay: 94
+    content: "\e[30;64Hd"
+  - delay: 575
+    content: _
+  - delay: 592
+    content: p
+  - delay: 138
+    content: e
+  - delay: 136
+    content: 'n'
+  - delay: 207
+    content: j
+  - delay: 174
+    content: u
+  - delay: 99
+    content: a
+  - delay: 167
+    content: l
+  - delay: 19
+    content: a
+  - delay: 150
+    content: 'n'
+  - delay: 412
+    content: ' '
+  - delay: 169
+    content: i
+  - delay: 519
+    content: 'n'
+  - delay: 847
+    content: t
+  - delay: 200
+    content: ' '
+  - delay: 88
+    content: p
+  - delay: 128
+    content: r
+  - delay: 100
+    content: i
+  - delay: 202
+    content: m
+  - delay: 66
+    content: a
+  - delay: 200
+    content: r
+  - delay: 217
+    content: 'y'
+  - delay: 194
+    content: ' '
+  - delay: 90
+    content: k
+  - delay: 116
+    content: e
+  - delay: 119
+    content: 'y'
+  - delay: 287
+    content: ' '
+  - delay: 264
+    content: a
+  - delay: 189
+    content: u
+  - delay: 92
+    content: t
+  - delay: 150
+    content: o
+  - delay: 832
+    content: '0'
+  - delay: 766
+    content: "\b \b"
+  - delay: 501
+    content: _
+  - delay: 312
+    content: i
+  - delay: 135
+    content: 'n'
+  - delay: 236
+    content: c
+  - delay: 286
+    content: r
+  - delay: 173
+    content: e
+  - delay: 56
+    content: m
+  - delay: 104
+    content: e
+  - delay: 130
+    content: 'n'
+  - delay: 96
+    content: t
+  - delay: 1792
+    content: ','
+  - delay: 245
+    content: ' '
+  - delay: 170
+    content: i
+  - delay: 125
+    content: d
+  - delay: 1080
+    content: _
+  - delay: 417
+    content: r
+  - delay: 837
+    content: "\b \b"
+  - delay: 373
+    content: p
+  - delay: 117
+    content: r
+  - delay: 269
+    content: i
+  - delay: 933
+    content: "\b \b"
+  - delay: 322
+    content: o
+  - delay: 174
+    content: d
+  - delay: 181
+    content: u
+  - delay: 216
+    content: k
+  - delay: 154
+    content: ' '
+  - delay: 186
+    content: i
+  - delay: 116
+    content: 'n'
+  - delay: 193
+    content: t
+  - delay: 388
+    content: ','
+  - delay: 289
+    content: ' '
+  - delay: 150
+    content: i
+  - delay: 625
+    content: d
+  - delay: 2963
+    content: _
+  - delay: 273
+    content: p
+  - delay: 148
+    content: r
+  - delay: 147
+    content: o
+  - delay: 150
+    content: m
+  - delay: 91
+    content: o
+  - delay: 900
+    content: ' '
+  - delay: 343
+    content: i
+  - delay: 82
+    content: 'n'
+  - delay: 154
+    content: t
+  - delay: 4248
+    content: ','
+  - delay: 286
+    content: ' '
+  - delay: 592
+    content: t
+  - delay: 180
+    content: g
+  - delay: 102
+    content: k
+  - delay: 588
+    content: "\b \b"
+  - delay: 387
+    content: l
+  - delay: 713
+    content: _
+  - delay: 237
+    content: t
+  - delay: 281
+    content: r
+  - delay: 217
+    content: a
+  - delay: 96
+    content: 'n'
+  - delay: 101
+    content: s
+  - delay: 171
+    content: a
+  - delay: 100
+    content: k
+  - delay: 115
+    content: s
+  - delay: 126
+    content: i
+  - delay: 1156
+    content: ' '
+  - delay: 265
+    content: d
+  - delay: 138
+    content: a
+  - delay: 144
+    content: t
+  - delay: 102
+    content: e
+  - delay: 1920
+    content: ','
+  - delay: 293
+    content: ' '
+  - delay: 444
+    content: f
+  - delay: 170
+    content: o
+  - delay: 191
+    content: r
+  - delay: 168
+    content: e
+  - delay: 98
+    content: i
+  - delay: 120
+    content: g
+  - delay: 159
+    content: 'n'
+  - delay: 168
+    content: ' '
+  - delay: 176
+    content: k
+  - delay: 112
+    content: e
+  - delay: 726
+    content: 'y'
+  - delay: 693
+    content: (
+  - delay: 336
+    content: i
+  - delay: 143
+    content: d
+  - delay: 335
+    content: _
+  - delay: 453
+    content: o
+  - delay: 685
+    content: "\b \b"
+  - delay: 245
+    content: p
+  - delay: 108
+    content: r
+  - delay: 260
+    content: d
+  - delay: 137
+    content: u
+  - delay: 816
+    content: "\b \b"
+  - delay: 195
+    content: "\b \b"
+  - delay: 606
+    content: o
+  - delay: 246
+    content: d
+  - delay: 98
+    content: u
+  - delay: 201
+    content: k
+  - delay: 1131
+    content: _
+  - delay: 552
+    content: "\b \b"
+  - delay: 321
+    content: )
+  - delay: 300
+    content: ' '
+  - delay: 304
+    content: r
+  - delay: 136
+    content: e
+  - delay: 139
+    content: f
+  - delay: 130
+    content: e
+  - delay: 107
+    content: r
+  - delay: 103
+    content: e
+  - delay: 160
+    content: 'n'
+  - delay: 170
+    content: c
+  - delay: 231
+    content: e
+  - delay: 190
+    content: s
+  - delay: 235
+    content: ' '
+  - delay: 1003
+    content: p
+  - delay: 169
+    content: t
+  - delay: 2950
+    content: r
+  - delay: 3034
+    content: "\r"
+  - delay: 501
+    content: "\e[?25l\e[32;64H\e[?25h"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 56
+    content: "\b"
+  - delay: 468
+    content: "\e[1C"
+  - delay: 233
+    content: "\e[1C"
+  - delay: 160
+    content: "\e[1C"
+  - delay: 623
+    content: "\r\n"
+  - delay: 1095
+    content: "\e[?25l\e[32;64Hr \e[32;64H\e[?25h"
+  - delay: 309
+    content: "\br \e[32;63H"
+  - delay: 220
+    content: "\br \e[32;62H"
+  - delay: 799
+    content: "\e[1C"
+  - delay: 694
+    content: "\b \b"
+  - delay: 348
+    content: ' '
+  - delay: 3881
+    content: p
+  - delay: 152
+    content: r
+  - delay: 84
+    content: o
+  - delay: 132
+    content: d
+  - delay: 168
+    content: u
+  - delay: 223
+    content: k
+  - delay: 713
+    content: (
+  - delay: 254
+    content: i
+  - delay: 176
+    content: d
+  - delay: 400
+    content: _
+  - delay: 397
+    content: p
+  - delay: 170
+    content: r
+  - delay: 132
+    content: o
+  - delay: 753
+    content: u
+  - delay: 231
+    content: k
+  - delay: 681
+    content: "\b \b"
+  - delay: 188
+    content: "\b \b"
+  - delay: 315
+    content: "\b \b"
+  - delay: 685
+    content: o
+  - delay: 132
+    content: d
+  - delay: 165
+    content: u
+  - delay: 198
+    content: k
+  - delay: 707
+    content: _
+  - delay: 498
+    content: "\b \b"
+  - delay: 988
+    content: )
+  - delay: 1818
+    content: ','
+  - delay: 356
+    content: ' '
+  - delay: 407
+    content: f
+  - delay: 159
+    content: o
+  - delay: 137
+    content: r
+  - delay: 170
+    content: e
+  - delay: 96
+    content: i
+  - delay: 153
+    content: g
+  - delay: 155
+    content: 'n'
+  - delay: 201
+    content: ' '
+  - delay: 323
+    content: k
+  - delay: 176
+    content: e
+  - delay: 175
+    content: 'y'
+  - delay: 13
+    content: e
+  - delay: 229
+    content: ' '
+  - delay: 1443
+    content: "\b \b"
+  - delay: 359
+    content: (
+  - delay: 750
+    content: i
+  - delay: 157
+    content: d
+  - delay: 332
+    content: _
+  - delay: 551
+    content: p
+  - delay: 99
+    content: r
+  - delay: 144
+    content: o
+  - delay: 122
+    content: m
+  - delay: 104
+    content: o
+  - delay: 736
+    content: )
+  - delay: 194
+    content: ' '
+  - delay: 350
+    content: r
+  - delay: 129
+    content: e
+  - delay: 137
+    content: f
+  - delay: 134
+    content: e
+  - delay: 167
+    content: r
+  - delay: 711
+    content: "\b \b"
+  - delay: 624
+    content: r
+  - delay: 164
+    content: e
+  - delay: 98
+    content: 'n'
+  - delay: 150
+    content: c
+  - delay: 173
+    content: e
+  - delay: 200
+    content: s
+  - delay: 268
+    content: ' '
+  - delay: 591
+    content: p
+  - delay: 352
+    content: r
+  - delay: 168
+    content: o
+  - delay: 94
+    content: m
+  - delay: 120
+    content: o
+  - delay: 335
+    content: ' '
+  - delay: 1104
+    content: (
+  - delay: 473
+    content: i
+  - delay: 127
+    content: d
+  - delay: 1115
+    content: _
+  - delay: 1012
+    content: p
+  - delay: 103
+    content: r
+  - delay: 152
+    content: o
+  - delay: 944
+    content: m
+  - delay: 119
+    content: o
+  - delay: 1206
+    content: )
+  - delay: 548
+    content: )
+  - delay: 381
+    content: ;
+  - delay: 26217
+    content: "\r\n"
+  - delay: 84
+    content: 'Query OK, 0 rows affected (0.083 sec)'
+  - delay: 15
+    content: "\e[?25l\e[37;1H\e[?25h"
+  - delay: 8
+    content: "Query OK, 0 rows affected (0.023 sec)\r\n\nERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\r\n\e[36;64Hthe right syntax to use near 'keye(id_promo) references promo (id\r\n\e[36;64Hd_promo))' at line 1"
+  - delay: 5
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 1668
+    content: "create table produk(id_produk int primary k\r\n\e[36;64Hkey auto_increment, nama_produk varchar(560), harga_asli int); cr\r\n\e[36;64Hreate table promo(id_promo int primary key auto_increment, nama_p\r\n\e[36;64Hproduk varchar(50), diskon_persen int); create table penjualan(id\r\n\e[36;64Hd_penjualan int primary key auto_increment, id_produk int, id_pro\r\n\e[36;64Homo int, tgl_transaksi date, foreign key(id_produk) references pr\r\n\e[36;64Hroduk(id_produk), foreign keye(id_promo) references promo (id_pro\r\n\e[36;64Homo));"
+  - delay: 1011
+    content: "\b"
+  - delay: 351
+    content: "\b"
+  - delay: 240
+    content: "\b"
+  - delay: 498
+    content: "\b"
+  - delay: 28
+    content: "\r"
+  - delay: 30
+    content: "\e[?25l\e[36;64H\e[?25h"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 88
+    content: "\b"
+  - delay: 157
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 384
+    content: "\b"
+  - delay: 194
+    content: "\b"
+  - delay: 608
+    content: "\e[?25l\b(id_promo) references promo (id_promo)); \e[36;29H\e[?25h"
+  - delay: 376
+    content: "\b"
+  - delay: 505
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 202
+    content: "\b"
+  - delay: 188
+    content: "\b"
+  - delay: 186
+    content: "\b"
+  - delay: 197
+    content: "\b"
+  - delay: 165
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 76
+    content: "\b"
+  - delay: 503
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\r"
+  - delay: 29
+    content: "\e[?25l\e[35;64H\e[?25h"
+  - delay: 36
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 38
+    content: "\b"
+  - delay: 83
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 94
+    content: "\b"
+  - delay: 502
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[34;64H\e[?25h"
+  - delay: 26
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 128
+    content: "\b"
+  - delay: 501
+    content: "\b"
+  - delay: 125
+    content: "\b"
+  - delay: 505
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 22
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 116
+    content: "\b"
+  - delay: 497
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 109
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 23
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[33;64H\e[?25h"
+  - delay: 30
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 64
+    content: "\b"
+  - delay: 22
+    content: "\b"
+  - delay: 16
+    content: "\b"
+  - delay: 18
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 1575
+    content: "\b"
+  - delay: 188
+    content: "\b"
+  - delay: 750
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;39H\e[?25h"
+  - delay: 499
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;38H\e[?25h"
+  - delay: 35
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;37H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;36H\e[?25h"
+  - delay: 28
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;35H"
+  - delay: 32
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;34H"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;33H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;32H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;31H\e[?25h"
+  - delay: 24
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;30H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;29H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;28H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;27H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;26H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;25H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;24H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;23H\e[?25h"
+  - delay: 35
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;22H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;21H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;20H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;19H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;18H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;17H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;16H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;15H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;14H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;13H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;12H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;11H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;10H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;9H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;8H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;7H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;6H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;5H\e[?25h"
+  - delay: 24
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;4H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;3H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;2H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\rcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[33;1H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\e[32;64Hcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;64H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;63H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;62H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;61H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;60H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;59H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;58H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;57H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;56H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;55H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;54H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;53H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;52H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;51H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;50H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;49H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;48H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;47H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;46H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;45H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;44H\e[?25h"
+  - delay: 24
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;43H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;42H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;41H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;40H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;39H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;38H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;37H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;36H\e[?25h"
+  - delay: 26
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;35H"
+  - delay: 42
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;34H"
+  - delay: 21
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;33H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;32H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;31H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;30H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;29H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;28H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;27H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;26H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;25H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;24H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;23H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;22H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;21H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;20H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;19H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;18H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;17H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;16H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;15H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;14H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;13H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;12H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;11H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;10H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;9H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;8H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;7H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;6H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;5H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;4H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;3H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;2H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\rcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[32;1H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[31;64Hcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;64H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;63H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;62H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;61H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;60H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;59H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;58H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;57H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;56H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;55H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;54H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;53H\e[?25h"
+  - delay: 42
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;52H\e[?25h"
+  - delay: 19
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;51H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;50H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;49H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;48H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;47H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;46H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;45H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;44H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;43H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;42H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;41H\e[?25h"
+  - delay: 40
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;40H\e[?25h"
+  - delay: 16
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;39H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;38H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;37H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;36H\e[?25h"
+  - delay: 32
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;35H"
+  - delay: 25
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;34H"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;33H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;32H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;31H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;30H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;29H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;28H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;27H\e[?25h"
+  - delay: 37
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;26H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;25H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;24H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;23H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;22H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;21H\e[?25h"
+  - delay: 37
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;20H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;19H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;18H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;17H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;16H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;15H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;14H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;13H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;12H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;11H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;10H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;9H\e[?25h"
+  - delay: 24
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;8H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;7H\e[?25h"
+  - delay: 26
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;6H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;5H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;4H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;3H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;2H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\rcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[31;1H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\e[30;64Hcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;64H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;63H\e[?25h"
+  - delay: 38
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;62H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;61H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;60H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;59H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;58H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;57H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;56H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;55H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;54H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;53H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;52H\e[?25h"
+  - delay: 35
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;51H\e[?25h"
+  - delay: 28
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;50H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;49H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;48H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;47H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;46H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;45H\e[?25h"
+  - delay: 34
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;44H\e[?25h"
+  - delay: 27
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;43H\e[?25h"
+  - delay: 38
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;42H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;41H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;40H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;39H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;38H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;37H\e[?25h"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;36H\e[?25h"
+  - delay: 33
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;35H"
+  - delay: 35
+    content: "\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;34H"
+  - delay: 23
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;33H\e[?25h"
+  - delay: 36
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;32H\e[?25h"
+  - delay: 24
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;31H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;30H\e[?25h"
+  - delay: 32
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;29H\e[?25h"
+  - delay: 30
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;28H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;27H\e[?25h"
+  - delay: 25
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;26H\e[?25h"
+  - delay: 29
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;25H\e[?25h"
+  - delay: 33
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;24H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;23H\e[?25h"
+  - delay: 31
+    content: "\e[?25l\bcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo)); \e[30;22H\e[?25h"
+  - delay: 27
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 29
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 32
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 32
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 34
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 23
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 33
+    content: "\e[?25lcreate table penjualan(id_penjualan int primary key auto_increment, id_produk int, id_promo int, tgl_transaksi date, foreign key(id_produk) references produk(id_produk), foreign key(id_promo) references promo (id_promo));\e[30;22H\e[?25h"
+  - delay: 440
+    content: "\e[?25l\e[34;1H\e[?25h"
+  - delay: 36
+    content: "Query OK, 0 rows affected (0.035 sec)\r\n"
+  - delay: 15
+    content: "\r\nMariaDB [flashsale]> "
+  - delay: 832
+    content: s
+  - delay: 375
+    content: h
+  - delay: 92
+    content: o
+  - delay: 580
+    content: w
+  - delay: 294
+    content: ' '
+  - delay: 315
+    content: t
+  - delay: 216
+    content: a
+  - delay: 148
+    content: b
+  - delay: 283
+    content: l
+  - delay: 158
+    content: e
+  - delay: 547
+    content: s
+  - delay: 447
+    content: ;
+  - delay: 453
+    content: "\r\n"
+  - delay: 24
+    content: "+---------------------+\r\n| Tables_in_flashsale |\r\n+---------------------+\r\n| penjualan           |\r\n| produk              |"
+  - delay: 5
+    content: "\r\n| promo               |\r\n+---------------------+\r\n3 rows in set (0.024 sec)\r\n"
+  - delay: 7
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 1356
+    content: i
+  - delay: 211
+    content: 'n'
+  - delay: 102
+    content: s
+  - delay: 201
+    content: e
+  - delay: 151
+    content: r
+  - delay: 164
+    content: t
+  - delay: 250
+    content: ' '
+  - delay: 203
+    content: i
+  - delay: 98
+    content: 'n'
+  - delay: 186
+    content: t
+  - delay: 79
+    content: o
+  - delay: 155
+    content: ' '
+  - delay: 2943
+    content: p
+  - delay: 110
+    content: e
+  - delay: 236
+    content: 'n'
+  - delay: 189
+    content: j
+  - delay: 5348
+    content: "\b \b"
+  - delay: 232
+    content: "\b \b"
+  - delay: 198
+    content: "\b \b"
+  - delay: 870
+    content: r
+  - delay: 146
+    content: o
+  - delay: 211
+    content: d
+  - delay: 104
+    content: u
+  - delay: 565
+    content: k
+  - delay: 145
+    content: ' '
+  - delay: 764
+    content: b
+  - delay: 487
+    content: "\b \b"
+  - delay: 129
+    content: v
+  - delay: 215
+    content: a
+  - delay: 91
+    content: l
+  - delay: 231
+    content: u
+  - delay: 84
+    content: e
+  - delay: 211
+    content: s
+  - delay: 413
+    content: ' '
+  - delay: 624
+    content: (
+  - delay: 1890
+    content: 'n'
+  - delay: 1029
+    content: "\b \b"
+  - delay: 1281
+    content: '1'
+  - delay: 441
+    content: ','
+  - delay: 660
+    content: ' '
+  - delay: 1215
+    content: "\b \b"
+  - delay: 500
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 25
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 33
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 28
+    content: "\b \b"
+  - delay: 26
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 34
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 20
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 32
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 29
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 31
+    content: "\b \b"
+  - delay: 27
+    content: "\b \b"
+  - delay: 30
+    content: "\b \b"
+  - delay: 495
+    content: d
+  - delay: 152
+    content: e
+  - delay: 169
+    content: s
+  - delay: 418
+    content: c
+  - delay: 378
+    content: ' '
+  - delay: 225
+    content: v
+  - delay: 430
+    content: p
+  - delay: 880
+    content: e
+  - delay: 600
+    content: 'n'
+  - delay: 134
+    content: j
+  - delay: 460
+    content: "\b \b"
+  - delay: 176
+    content: "\b \b"
+  - delay: 136
+    content: "\b \b"
+  - delay: 328
+    content: "\b \b"
+  - delay: 176
+    content: "\b \b"
+  - delay: 541
+    content: p
+  - delay: 263
+    content: r
+  - delay: 128
+    content: o
+  - delay: 106
+    content: d
+  - delay: 136
+    content: u
+  - delay: 232
+    content: k
+  - delay: 2652
+    content: ;
+  - delay: 118
+    content: ' '
+  - delay: 268
+    content: d
+  - delay: 171
+    content: e
+  - delay: 175
+    content: s
+  - delay: 426
+    content: c
+  - delay: 225
+    content: ' '
+  - delay: 1448
+    content: p
+  - delay: 965
+    content: r
+  - delay: 222
+    content: o
+  - delay: 127
+    content: m
+  - delay: 101
+    content: o
+  - delay: 669
+    content: ;
+  - delay: 250
+    content: ' '
+  - delay: 236
+    content: d
+  - delay: 162
+    content: e
+  - delay: 166
+    content: s
+  - delay: 505
+    content: c
+  - delay: 201
+    content: ' '
+  - delay: 456
+    content: p
+  - delay: 108
+    content: e
+  - delay: 176
+    content: 'n'
+  - delay: 181
+    content: j
+  - delay: 180
+    content: u
+  - delay: 136
+    content: a
+  - delay: 114
+    content: l
+  - delay: 96
+    content: a
+  - delay: 137
+    content: 'n'
+  - delay: 579
+    content: ;
+  - delay: 340
+    content: "\r\n"
+  - delay: 63
+    content: "+-------------+--------------+------+-----+---------+-----------\r\n\e[36;64H------+\r\n| Field       | Type         | Null | Key | Default | Extra     \r\n\e[36;64H      |\r\n+-------------+--------------+------+-----+---------+-----------\r\n\e[36;64H------+"
+  - delay: 6
+    content: "\r\n| id_produk   | int(11)      | NO   | PRI | NULL    | auto_incre\r\n\e[36;64Hement |\r\n"
+  - delay: 11
+    content: "| nama_produk | varchar(560) | YES  |     | NULL    |           \e[37;76H\r\n     |\r\n| harga_asli  | int(11)      | YES  |     | NULL    |           \e[37;76H\r\n\e[4C |\r\n+-------------+--------------+------+-----+---------+-----------\r\n\e[36;64H------+\r\n3 rows in set (0.065 sec)\r\n"
+  - delay: 18
+    content: "\n+---------------+-------------+------+-----+---------+----------\r\n\e[36;64H-------+\r\n| Field         | Type        | Null | Key | Default | Extra    \r\n\e[36;64H       |\r\n+---------------+-------------+------+-----+---------+----------\r\n\e[36;64H-------+"
+  - delay: 7
+    content: "\r\n| id_promo      | int(11)     | NO   | PRI | NULL    | auto_incr\r\n\e[36;64Hrement |"
+  - delay: 6
+    content: "\r\n| nama_produk   | varchar(50) | YES  |     | NULL    |          \e[37;75H\r\n\e[1C     |\r\n| diskon_persen | int(11)     | YES  |     | NULL    |          \e[37;75H\r\n      |\r\n+---------------+-------------+------+-----+---------+----------\r\n\e[36;64H-------+\r\n3 rows in set (0.016 sec)\r\n"
+  - delay: 10
+    content: |+
+
+  - delay: 30
+    content: "+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+\r\n| Field         | Type    | Null | Key | Default | Extra        \r\n\e[36;64H   |\r\n+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+"
+  - delay: 5
+    content: "\r\n| id_penjualan  | int(11) | NO   | PRI | NULL    | auto_incremen\r\n\e[36;64Hnt |\r\n| id_produk     | int(11) | YES  | MUL | NULL    |              \e[37;79H\r\n  |\r\n| id_promo      | int(11) | YES  | MUL | NULL    |              \e[37;79H\r\n  |\r\n| tgl_transaksi | date    | YES  |     | NULL    |\e[3C           \e[37;76H\r\n  |\r\n+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+\r\n4 rows in set (0.040 sec)\r\n"
+  - delay: 16
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 2954
+    content: i
+  - delay: 133
+    content: s
+  - delay: 94
+    content: 'n'
+  - delay: 556
+    content: "\b \b"
+  - delay: 129
+    content: "\b \b"
+  - delay: 465
+    content: 'n'
+  - delay: 403
+    content: s
+  - delay: 201
+    content: e
+  - delay: 163
+    content: e
+  - delay: 19
+    content: r
+  - delay: 328
+    content: t
+  - delay: 348
+    content: ' '
+  - delay: 602
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 135
+    content: "\b \b"
+  - delay: 140
+    content: "\b \b"
+  - delay: 521
+    content: r
+  - delay: 148
+    content: t
+  - delay: 216
+    content: ' '
+  - delay: 122
+    content: i
+  - delay: 80
+    content: 'n'
+  - delay: 143
+    content: t
+  - delay: 87
+    content: o
+  - delay: 111
+    content: ' '
+  - delay: 421
+    content: v
+  - delay: 202
+    content: a
+  - delay: 102
+    content: l
+  - delay: 209
+    content: u
+  - delay: 59
+    content: e
+  - delay: 137
+    content: s
+  - delay: 492
+    content: ' '
+  - delay: 860
+    content: (
+  - delay: 4373
+    content: '1'
+  - delay: 433
+    content: ','
+  - delay: 7960
+    content: i
+  - delay: 149
+    content: p
+  - delay: 575
+    content: h
+  - delay: 97
+    content: o
+  - delay: 231
+    content: 'n'
+  - delay: 137
+    content: e
+  - delay: 2102
+    content: ' '
+  - delay: 247
+    content: '1'
+  - delay: 245
+    content: '5'
+  - delay: 824
+    content: ''''
+  - delay: 1194
+    content: "\b"
+  - delay: 154
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 145
+    content: "\b"
+  - delay: 137
+    content: "\b"
+  - delay: 137
+    content: "\b"
+  - delay: 148
+    content: "\b"
+  - delay: 133
+    content: "\b"
+  - delay: 170
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 1005
+    content: "\e[?25l'iphone 15'\e[37;45H\e[?25h"
+  - delay: 189
+    content: "\e[1C"
+  - delay: 204
+    content: "\e[1C"
+  - delay: 159
+    content: "\e[1C"
+  - delay: 149
+    content: "\e[1C"
+  - delay: 502
+    content: "\e[1C"
+  - delay: 92
+    content: "\e[1C"
+  - delay: 176
+    content: "\e[1C"
+  - delay: 163
+    content: "\e[1C"
+  - delay: 171
+    content: "\e[1C"
+  - delay: 349
+    content: "\e[1C"
+  - delay: 338
+    content: ','
+  - delay: 948
+    content: '1'
+  - delay: 602
+    content: '5'
+  - delay: 1001
+    content: '0'
+  - delay: 256
+    content: '0'
+  - delay: 295
+    content: '0'
+  - delay: 268
+    content: '0'
+  - delay: 261
+    content: '0'
+  - delay: 287
+    content: '0'
+  - delay: 1462
+    content: ")\r\n\e[36;64H)\r\n"
+  - delay: 1642
+    content: ','
+  - delay: 2410
+    content: (
+  - delay: 549
+    content: '2'
+  - delay: 1024
+    content: ','
+  - delay: 2029
+    content: m
+  - delay: 106
+    content: a
+  - delay: 249
+    content: c
+  - delay: 277
+    content: b
+  - delay: 200
+    content: o
+  - delay: 149
+    content: o
+  - delay: 197
+    content: k
+  - delay: 190
+    content: ' '
+  - delay: 481
+    content: m
+  - delay: 401
+    content: '2'
+  - delay: 1089
+    content: ''''
+  - delay: 366
+    content: "\b"
+  - delay: 194
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 166
+    content: "\b"
+  - delay: 153
+    content: "\b"
+  - delay: 156
+    content: "\b"
+  - delay: 144
+    content: "\b"
+  - delay: 155
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 177
+    content: "\b"
+  - delay: 457
+    content: "\b"
+  - delay: 184
+    content: "\e[?25l'macbook m2'\e[37;6H\e[?25h"
+  - delay: 415
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 38
+    content: "\e[1C"
+  - delay: 86
+    content: "\e[1C"
+  - delay: 158
+    content: "\e[1C"
+  - delay: 325
+    content: "\e[1C"
+  - delay: 565
+    content: ','
+  - delay: 249
+    content: ' '
+  - delay: 1070
+    content: "\b \b"
+  - delay: 681
+    content: '3'
+  - delay: 364
+    content: '0'
+  - delay: 169
+    content: '0'
+  - delay: 150
+    content: '0'
+  - delay: 148
+    content: '0'
+  - delay: 161
+    content: '0'
+  - delay: 513
+    content: '0'
+  - delay: 364
+    content: '0'
+  - delay: 728
+    content: "\b \b"
+  - delay: 1227
+    content: )
+  - delay: 712
+    content: ','
+  - delay: 281
+    content: ' '
+  - delay: 671
+    content: (
+  - delay: 745
+    content: '3'
+  - delay: 335
+    content: ','
+  - delay: 940
+    content: a
+  - delay: 208
+    content: i
+  - delay: 1425
+    content: "\b"
+  - delay: 418
+    content: "\b"
+  - delay: 650
+    content: "\e[?25l'ai\e[37;32H\e[?25h"
+  - delay: 107
+    content: "\e[1C"
+  - delay: 163
+    content: "\e[1C"
+  - delay: 656
+    content: r
+  - delay: 264
+    content: p
+  - delay: 173
+    content: o
+  - delay: 177
+    content: d
+  - delay: 203
+    content: s
+  - delay: 1011
+    content: ' '
+  - delay: 323
+    content: p
+  - delay: 136
+    content: r
+  - delay: 120
+    content: o
+  - delay: 1682
+    content: ''''
+  - delay: 1052
+    content: ','
+  - delay: 1674
+    content: '3'
+  - delay: 184
+    content: '0'
+  - delay: 181
+    content: '0'
+  - delay: 690
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 348
+    content: "\b \b"
+  - delay: 349
+    content: '1'
+  - delay: 520
+    content: '5'
+  - delay: 545
+    content: '0'
+  - delay: 155
+    content: '0'
+  - delay: 144
+    content: '0'
+  - delay: 337
+    content: '0'
+  - delay: 290
+    content: '0'
+  - delay: 903
+    content: )
+  - delay: 1249
+    content: ;
+  - delay: 556
+    content: ' '
+  - delay: 583
+    content: i
+  - delay: 100
+    content: 'n'
+  - delay: 268
+    content: s
+  - delay: 214
+    content: e
+  - delay: 134
+    content: r
+  - delay: 182
+    content: t
+  - delay: 251
+    content: ' '
+  - delay: 153
+    content: i
+  - delay: 94
+    content: 'n'
+  - delay: 471
+    content: "t\r\n\e[36;64Ht\r\n"
+  - delay: 150
+    content: o
+  - delay: 102
+    content: ' '
+  - delay: 222
+    content: b
+  - delay: 694
+    content: "\b \b"
+  - delay: 1716
+    content: "\b"
+  - delay: 497
+    content: "\r"
+  - delay: 33
+    content: "\e[?25l\e[36;64H\e[?25h"
+  - delay: 33
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 36
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 89
+    content: "\b"
+  - delay: 190
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 24
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\r"
+  - delay: 31
+    content: "\e[?25l\e[35;64H\e[?25h"
+  - delay: 25
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 35
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 763
+    content: "\e[?25lpvalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;35H\e[?25h"
+  - delay: 254
+    content: "\e[?25lrvalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;36H\e[?25h"
+  - delay: 141
+    content: "\e[?25lovalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;37H\e[?25h"
+  - delay: 156
+    content: "\e[?25ldvalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;38H\e[?25h"
+  - delay: 124
+    content: "\e[?25luvalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;39H\e[?25h"
+  - delay: 850
+    content: "\e[?25lkvalues (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;40H\e[?25h"
+  - delay: 532
+    content: "\e[?25l values (1,'iphone 15',15000000),(2,'macbook m2',3000000), (3,'airpods pro',1500000); insert into \e[35;41H\e[?25h"
+  - delay: 612
+    content: "\e[1C"
+  - delay: 504
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 29
+    content: "\r\n"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 183
+    content: "\e[1C"
+  - delay: 499
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 24
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\r\n"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 1280
+    content: p
+  - delay: 141
+    content: r
+  - delay: 145
+    content: o
+  - delay: 147
+    content: m
+  - delay: 130
+    content: o
+  - delay: 1008
+    content: ' '
+  - delay: 1864
+    content: v
+  - delay: 193
+    content: a
+  - delay: 127
+    content: l
+  - delay: 229
+    content: u
+  - delay: 94
+    content: e
+  - delay: 188
+    content: s
+  - delay: 899
+    content: (
+  - delay: 2176
+    content: '1'
+  - delay: 358
+    content: ','
+  - delay: 18466
+    content: p
+  - delay: 111
+    content: a
+  - delay: 276
+    content: 'y'
+  - delay: 723
+    content: d
+  - delay: 137
+    content: a
+  - delay: 107
+    content: 'y'
+  - delay: 133
+    content: ' '
+  - delay: 400
+    content: s
+  - delay: 126
+    content: a
+  - delay: 175
+    content: l
+  - delay: 126
+    content: e
+  - delay: 1315
+    content: ''''
+  - delay: 221
+    content: "\b"
+  - delay: 172
+    content: "\b"
+  - delay: 143
+    content: "\b"
+  - delay: 148
+    content: "\b"
+  - delay: 145
+    content: "\b"
+  - delay: 156
+    content: "\b"
+  - delay: 167
+    content: "\b"
+  - delay: 151
+    content: "\b"
+  - delay: 163
+    content: "\b"
+  - delay: 152
+    content: "\b"
+  - delay: 145
+    content: "\b"
+  - delay: 315
+    content: "\b"
+  - delay: 151
+    content: "\e[?25l'payday sale'\e[37;26H\e[?25h"
+  - delay: 208
+    content: "\e[1C"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 161
+    content: "\e[1C"
+  - delay: 159
+    content: "\e[1C"
+  - delay: 155
+    content: "\e[1C"
+  - delay: 156
+    content: "\e[1C"
+  - delay: 149
+    content: "\e[1C"
+  - delay: 154
+    content: "\e[1C"
+  - delay: 147
+    content: "\e[1C"
+  - delay: 101
+    content: "\e[1C"
+  - delay: 384
+    content: "\e[1C"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 1003
+    content: ','
+  - delay: 1992
+    content: ' '
+  - delay: 1390
+    content: "\b \b"
+  - delay: 143
+    content: '1'
+  - delay: 243
+    content: '0'
+  - delay: 827
+    content: )
+  - delay: 674
+    content: ','
+  - delay: 328
+    content: ' '
+  - delay: 428
+    content: (
+  - delay: 925
+    content: '2'
+  - delay: 277
+    content: ','
+  - delay: 1108
+    content: ''''
+  - delay: 991
+    content: m
+  - delay: 204
+    content: i
+  - delay: 259
+    content: d
+  - delay: 153
+    content: 'n'
+  - delay: 221
+    content: i
+  - delay: 144
+    content: g
+  - delay: 170
+    content: h
+  - delay: 706
+    content: t
+  - delay: 232
+    content: ' '
+  - delay: 216
+    content: s
+  - delay: 150
+    content: a
+  - delay: 116
+    content: l
+  - delay: 72
+    content: e
+  - delay: 1005
+    content: ''''
+  - delay: 1160
+    content: ','
+  - delay: 1065
+    content: '2'
+  - delay: 297
+    content: "0\r\n\e[36;64H0\r\n"
+  - delay: 1720
+    content: )
+  - delay: 1319
+    content: ','
+  - delay: 2509
+    content: (
+  - delay: 1239
+    content: f
+  - delay: 242
+    content: a
+  - delay: 722
+    content: "\b \b"
+  - delay: 183
+    content: "\b \b"
+  - delay: 1211
+    content: '3'
+  - delay: 554
+    content: ','
+  - delay: 851
+    content: f
+  - delay: 118
+    content: l
+  - delay: 87
+    content: a
+  - delay: 95
+    content: s
+  - delay: 168
+    content: h
+  - delay: 130
+    content: a
+  - delay: 526
+    content: "\b \b"
+  - delay: 169
+    content: s
+  - delay: 140
+    content: a
+  - delay: 162
+    content: k
+  - delay: 114
+    content: e
+  - delay: 453
+    content: "\b \b"
+  - delay: 544
+    content: "\b \b"
+  - delay: 213
+    content: "\b \b"
+  - delay: 616
+    content: a
+  - delay: 107
+    content: l
+  - delay: 83
+    content: e
+  - delay: 2379
+    content: ''''
+  - delay: 279
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 140
+    content: "\b"
+  - delay: 163
+    content: "\b"
+  - delay: 118
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 139
+    content: "\b"
+  - delay: 151
+    content: "\b"
+  - delay: 126
+    content: "\b"
+  - delay: 332
+    content: "\b"
+  - delay: 135
+    content: "\e[?25l'flashsale'\e[37;7H\e[?25h"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 144
+    content: "\e[1C"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 100
+    content: "\e[1C"
+  - delay: 146
+    content: "\e[1C"
+  - delay: 163
+    content: "\e[1C"
+  - delay: 909
+    content: ','
+  - delay: 348
+    content: ' '
+  - delay: 823
+    content: "\b \b"
+  - delay: 269
+    content: '5'
+  - delay: 180
+    content: '0'
+  - delay: 830
+    content: )
+  - delay: 1130
+    content: ;
+  - delay: 1217
+    content: "\r\n"
+  - delay: 15
+    content: "Query OK, 3 rows affected (0.016 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n\nQuery OK, 3 rows affected (0.004 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n"
+  - delay: 10
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 5534
+    content: i
+  - delay: 200
+    content: 'n'
+  - delay: 87
+    content: s
+  - delay: 180
+    content: e
+  - delay: 137
+    content: r
+  - delay: 281
+    content: t
+  - delay: 338
+    content: ' '
+  - delay: 161
+    content: i
+  - delay: 100
+    content: 'n'
+  - delay: 156
+    content: t
+  - delay: 84
+    content: o
+  - delay: 175
+    content: ' '
+  - delay: 1970
+    content: p
+  - delay: 115
+    content: e
+  - delay: 155
+    content: 'n'
+  - delay: 180
+    content: j
+  - delay: 167
+    content: u
+  - delay: 127
+    content: a
+  - delay: 87
+    content: l
+  - delay: 85
+    content: a
+  - delay: 120
+    content: 'n'
+  - delay: 115
+    content: ' '
+  - delay: 2507
+    content: v
+  - delay: 259
+    content: a
+  - delay: 286
+    content: l
+  - delay: 200
+    content: u
+  - delay: 85
+    content: e
+  - delay: 176
+    content: d
+  - delay: 657
+    content: s
+  - delay: 369
+    content: "\b \b"
+  - delay: 141
+    content: "\b \b"
+  - delay: 74
+    content: s
+  - delay: 2188
+    content: (
+  - delay: 885
+    content: "\b \b"
+  - delay: 114
+    content: ' '
+  - delay: 791
+    content: "\b \b"
+  - delay: 329
+    content: (
+  - delay: 505
+    content: '2'
+  - delay: 25
+    content: '1'
+  - delay: 1232
+    content: "\b \b"
+  - delay: 125
+    content: "\b \b"
+  - delay: 89
+    content: '2'
+  - delay: 837
+    content: "\b \b"
+  - delay: 106
+    content: '1'
+  - delay: 626
+    content: ','
+  - delay: 1431
+    content: '1'
+  - delay: 108
+    content: ','
+  - delay: 2303
+    content: ''''
+  - delay: 201
+    content: '2'
+  - delay: 333
+    content: '0'
+  - delay: 97
+    content: '2'
+  - delay: 149
+    content: '0'
+  - delay: 300
+    content: '2'
+  - delay: 895
+    content: "\b \b"
+  - delay: 799
+    content: '-'
+  - delay: 842
+    content: '0'
+  - delay: 249
+    content: '5'
+  - delay: 645
+    content: '-'
+  - delay: 149
+    content: "\b \e[37;63H"
+  - delay: 1789
+    content: '-'
+  - delay: 655
+    content: "2\r\n\e[36;64H2\r\n"
+  - delay: 296
+    content: '0'
+  - delay: 919
+    content: )
+  - delay: 891
+    content: ','
+  - delay: 1310
+    content: (
+  - delay: 1225
+    content: '2'
+  - delay: 390
+    content: ','
+  - delay: 119
+    content: '2'
+  - delay: 116
+    content: ','
+  - delay: 1371
+    content: '2'
+  - delay: 545
+    content: '0'
+  - delay: 92
+    content: '2'
+  - delay: 112
+    content: '0'
+  - delay: 5011
+    content: '-'
+  - delay: 1033
+    content: '0'
+  - delay: 219
+    content: '5'
+  - delay: 161
+    content: '-'
+  - delay: 690
+    content: '2'
+  - delay: 348
+    content: '1'
+  - delay: 1684
+    content: )
+  - delay: 2132
+    content: "\b"
+  - delay: 298
+    content: "')\b"
+  - delay: 415
+    content: "\b"
+  - delay: 209
+    content: "\b"
+  - delay: 163
+    content: "\b"
+  - delay: 158
+    content: "\b"
+  - delay: 180
+    content: "\b"
+  - delay: 169
+    content: "\b"
+  - delay: 159
+    content: "\b"
+  - delay: 166
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 163
+    content: "\b"
+  - delay: 141
+    content: "\b"
+  - delay: 174
+    content: "\b"
+  - delay: 463
+    content: "\e[1C"
+  - delay: 341
+    content: "\e[?25l'2020-05-21')\e[37;10H\e[?25h"
+  - delay: 243
+    content: "\b"
+  - delay: 188
+    content: "\b"
+  - delay: 164
+    content: "\b"
+  - delay: 186
+    content: "\b"
+  - delay: 169
+    content: "\b"
+  - delay: 188
+    content: "\b"
+  - delay: 417
+    content: "\b"
+  - delay: 392
+    content: "\b"
+  - delay: 178
+    content: "\e[?25l'),(2,2,'2020-05-21')\e[37;3H\e[?25h"
+  - delay: 229
+    content: "\e[1C"
+  - delay: 200
+    content: "\e[1C"
+  - delay: 502
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 25
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 26
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 28
+    content: ''''
+  - delay: 28
+    content: ','
+  - delay: 30
+    content: '3'
+  - delay: 30
+    content: '0'
+  - delay: 610
+    content: "\b \b"
+  - delay: 190
+    content: "\b \b"
+  - delay: 230
+    content: "\b \b"
+  - delay: 1072
+    content: ','
+  - delay: 1331
+    content: (
+  - delay: 429
+    content: '3'
+  - delay: 534
+    content: ','
+  - delay: 90
+    content: '3'
+  - delay: 113
+    content: ','
+  - delay: 1444
+    content: '2'
+  - delay: 244
+    content: '0'
+  - delay: 130
+    content: '2'
+  - delay: 502
+    content: '5'
+  - delay: 984
+    content: '-'
+  - delay: 265
+    content: '1'
+  - delay: 105
+    content: '2'
+  - delay: 111
+    content: '-'
+  - delay: 1449
+    content: '1'
+  - delay: 150
+    content: '2'
+  - delay: 2560
+    content: ''''
+  - delay: 335
+    content: "\b"
+  - delay: 175
+    content: "\b"
+  - delay: 139
+    content: "\b"
+  - delay: 501
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 108
+    content: "\b"
+  - delay: 177
+    content: "\b"
+  - delay: 155
+    content: "\b"
+  - delay: 179
+    content: "\b"
+  - delay: 151
+    content: "\b"
+  - delay: 190
+    content: "\b"
+  - delay: 260
+    content: "\b"
+  - delay: 318
+    content: "\e[?25l'3,3,2025-12-12'\e[37;27H\e[?25h"
+  - delay: 175
+    content: "\e[1C"
+  - delay: 500
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 92
+    content: "\e[1C"
+  - delay: 153
+    content: "\e[1C"
+  - delay: 171
+    content: "\e[1C"
+  - delay: 174
+    content: "\e[1C"
+  - delay: 137
+    content: "\e[1C"
+  - delay: 150
+    content: "\e[1C"
+  - delay: 188
+    content: "\e[1C"
+  - delay: 745
+    content: )
+  - delay: 673
+    content: ;
+  - delay: 2696
+    content: "\r\n"
+  - delay: 10
+    content: '    ''> '
+  - delay: 2726
+    content: ''''
+  - delay: 813
+    content: ;
+  - delay: 469
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\r\n\e[36;64Hthe right syntax to use near '',('3,3,2025-12-12');\r\n'' at line 1"
+  - delay: 15
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 1935
+    content: ''';'
+  - delay: 489
+    content: "\e[?25l\e[37;22Hinsert into penjualan values(1,1,'2020-05-2\e[?25h\r\n\e[36;64H20'),(2,2,'2020-05-21')',('3,3,2025-12-12');"
+  - delay: 6520
+    content: "\b"
+  - delay: 284
+    content: "\b"
+  - delay: 370
+    content: "\b"
+  - delay: 497
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 976
+    content: "\r'),(2,2,'2020-05-21')',('3,3,2025-12-12'); \r"
+  - delay: 224
+    content: "\e[?25l\e[36;64H'),(2,2,'2020-05-21')',('3,3,2025-12-12'); \e[36;64H\e[?25h"
+  - delay: 842
+    content: "1'),(2,2,'2020-05-21')',('3,3,2025-12-12');\r"
+  - delay: 151
+    content: "\e[?25l2'),(2,2,'2020-05-21')',('3,3,2025-12-12');\e[37;2H\e[?25h"
+  - delay: 586
+    content: "\e[1C"
+  - delay: 245
+    content: "\e[1C"
+  - delay: 212
+    content: "\e[1C"
+  - delay: 183
+    content: "\e[1C"
+  - delay: 186
+    content: "\e[1C"
+  - delay: 217
+    content: "\e[1C"
+  - delay: 606
+    content: "\e[1C"
+  - delay: 209
+    content: "\e[1C"
+  - delay: 180
+    content: "\e[1C"
+  - delay: 171
+    content: "\e[1C"
+  - delay: 501
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 23
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 948
+    content: "\e[1C"
+  - delay: 218
+    content: "\e[1C"
+  - delay: 168
+    content: "\e[1C"
+  - delay: 226
+    content: "\e[1C"
+  - delay: 165
+    content: "\e[1C"
+  - delay: 145
+    content: "\e[1C"
+  - delay: 160
+    content: "\e[1C"
+  - delay: 156
+    content: "\e[1C"
+  - delay: 150
+    content: "\e[1C"
+  - delay: 244
+    content: "\e[1C"
+  - delay: 592
+    content: "\e[?25l'2025-12-12');\e[37;32H\e[?25h"
+  - delay: 73
+    content: "\e[1C"
+  - delay: 505
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 36
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 256
+    content: "\e[1C"
+  - delay: 174
+    content: "\e[1C"
+  - delay: 234
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\e[?25l\r\n\e[36;64Hthe right syntax to use near '',('3,3,'2025-12-12')' at line 1   \e[37;62H\e[?25h"
+  - delay: 25
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 930
+    content: "insert into penjualan values(1,1,'2020-05-1\r\n\e[36;64H12'),(2,2,'2020-05-21')',('3,3,'2025-12-12');"
+  - delay: 11338
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 303
+    content: "\b"
+  - delay: 567
+    content: "\e[?25l\b3,3,'2025-12-12'); \e[37;26H\e[?25h"
+  - delay: 297
+    content: "\e[1C"
+  - delay: 714
+    content: "\e[2C"
+  - delay: 16
+    content: "\e[6C"
+  - delay: 8
+    content: "\e[1C"
+  - delay: 26
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 25
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 716
+    content: "\r\n"
+  - delay: 22
+    content: '    ''> '
+  - delay: 4266
+    content: ''''
+  - delay: 427
+    content: ;
+  - delay: 447
+    content: "\r\n"
+  - delay: 5
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\r\n\e[36;64Hthe right syntax to use near '',(3,3,'2025-12-12');\r\n'' at line 1"
+  - delay: 5
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 776
+    content: ''';'
+  - delay: 467
+    content: "\e[?25l\e[37;22Hinsert into penjualan values(1,1,'2020-05-1\e[?25h\r\n\e[36;64H12'),(2,2,'2020-05-21')',(3,3,'2025-12-12');"
+  - delay: 7776
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 231
+    content: "\b"
+  - delay: 227
+    content: "\b"
+  - delay: 174
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 105
+    content: "\b"
+  - delay: 176
+    content: "\b"
+  - delay: 146
+    content: "\b"
+  - delay: 615
+    content: "\e[?25l\b,(3,3,'2025-12-12'); \e[37;23H\e[?25h"
+  - delay: 921
+    content: "\r\nERROR 1136 (21S01): Column count doesn't match value count at ro\r\n\e[36;64How 1"
+  - delay: 15
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 1453
+    content: "insert into penjualan values(1,1,'2020-05-1\r\n\e[36;64H12'),(2,2,'2020-05-21'),(3,3,'2025-12-12');"
+  - delay: 1610
+    content: "\b"
+  - delay: 979
+    content: "\e[1C"
+  - delay: 21340
+    content: "\r\nERROR 1136 (21S01): Column count doesn't match value count at ro\r\n\e[36;64How 1"
+  - delay: 13
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 4142
+    content: "insert into penjualan values(1,1,'2020-05-1\r\n\e[36;64H12'),(2,2,'2020-05-21'),(3,3,'2025-12-12');"
+  - delay: 1670
+    content: "\e[?25l\e[36;22H';                                         \r\n\e[42X\e[36;24H\e[?25h"
+  - delay: 229
+    content: "\e[?25l\e[36;22Hinsert into penjualan values(1,1,'2020-05-12'),(2,2,'2020-05-21')',(3,3,'2025-12-12');\e[?25h"
+  - delay: 4044
+    content: "\e[?25l\e[36;22H';                                         \r\n\e[43X\e[36;24H\e[?25h"
+  - delay: 181
+    content: "\e[?25l\e[36;22Hinsert into penjualan values(1,1,'2020-05-12'),(2,2,'2020-05-21'),(3,3,'2025-12-12');\e[?25h"
+  - delay: 898
+    content: "\e[?25l\e[36;22H';                                         \r\n\e[42X\e[36;24H\e[?25h"
+  - delay: 868
+    content: "\b \b"
+  - delay: 160
+    content: "\b \b"
+  - delay: 233
+    content: s
+  - delay: 318
+    content: e
+  - delay: 151
+    content: l
+  - delay: 71
+    content: e
+  - delay: 474
+    content: c
+  - delay: 431
+    content: t
+  - delay: 241
+    content: ' '
+  - delay: 514
+    content: '*'
+  - delay: 142
+    content: ' '
+  - delay: 340
+    content: f
+  - delay: 168
+    content: r
+  - delay: 130
+    content: o
+  - delay: 213
+    content: m
+  - delay: 177
+    content: ' '
+  - delay: 1895
+    content: p
+  - delay: 113
+    content: r
+  - delay: 155
+    content: o
+  - delay: 119
+    content: m
+  - delay: 123
+    content: o
+  - delay: 715
+    content: ;
+  - delay: 169
+    content: ' '
+  - delay: 406
+    content: s
+  - delay: 202
+    content: e
+  - delay: 82
+    content: l
+  - delay: 85
+    content: e
+  - delay: 508
+    content: c
+  - delay: 287
+    content: t
+  - delay: 262
+    content: ' '
+  - delay: 436
+    content: '*'
+  - delay: 107
+    content: ' '
+  - delay: 232
+    content: f
+  - delay: 150
+    content: r
+  - delay: 51
+    content: o
+  - delay: 221
+    content: m
+  - delay: 139
+    content: ' '
+  - delay: 2339
+    content: p
+  - delay: 98
+    content: r
+  - delay: 151
+    content: o
+  - delay: 114
+    content: d
+  - delay: 186
+    content: u
+  - delay: 289
+    content: k
+  - delay: 1440
+    content: ;
+  - delay: 929
+    content: "\r\n"
+  - delay: 5
+    content: "+----------+---------------+---------------+\r\n| id_promo | nama_produk   | diskon_persen |\r\n+----------+---------------+---------------+"
+  - delay: 12
+    content: "\r\n|        1 | payday sale\e[1C  |            10 |\r\n|        2 | midnight sale |            20 |\r\n|        3 | flashsale     |            50 |\r\n+----------+---------------+---------------+\r\n3 rows in set (0.005 sec)\r\n\n+-----------+-------------+------------+\r\n| id_produk | nama_produk | harga_asli |\r\n+-----------+-------------+------------+"
+  - delay: 5
+    content: "\r\n|\e[5C    1 | iphone 15   |   15000000 |"
+  - delay: 5
+    content: "\r\n|         2 | macbook m2  |    3000000 |"
+  - delay: 13
+    content: "\r\n|         3 | airpods pro |    1500000 |\r\n+-----------+-------------+------------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 16
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 2489
+    content: s
+  - delay: 324
+    content: g
+  - delay: 770
+    content: "\b \b"
+  - delay: 292
+    content: e
+  - delay: 97
+    content: l
+  - delay: 93
+    content: e
+  - delay: 625
+    content: c
+  - delay: 249
+    content: t
+  - delay: 215
+    content: ' '
+  - delay: 498
+    content: '*'
+  - delay: 138
+    content: ' '
+  - delay: 200
+    content: f
+  - delay: 149
+    content: r
+  - delay: 129
+    content: o
+  - delay: 203
+    content: m
+  - delay: 112
+    content: ' '
+  - delay: 726
+    content: p
+  - delay: 95
+    content: e
+  - delay: 200
+    content: 'n'
+  - delay: 201
+    content: j
+  - delay: 157
+    content: u
+  - delay: 108
+    content: a
+  - delay: 114
+    content: l
+  - delay: 64
+    content: a
+  - delay: 172
+    content: 'n'
+  - delay: 700
+    content: ;
+  - delay: 122
+    content: "\r\nEmpty set (0.001 sec)\r\n"
+  - delay: 9
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 6312
+    content: i
+  - delay: 184
+    content: 'n'
+  - delay: 82
+    content: s
+  - delay: 171
+    content: e
+  - delay: 146
+    content: r
+  - delay: 155
+    content: t
+  - delay: 190
+    content: ' '
+  - delay: 96
+    content: i
+  - delay: 99
+    content: 'n'
+  - delay: 125
+    content: t
+  - delay: 94
+    content: o
+  - delay: 111
+    content: ' '
+  - delay: 462
+    content: p
+  - delay: 100
+    content: e
+  - delay: 157
+    content: 'n'
+  - delay: 176
+    content: j
+  - delay: 172
+    content: u
+  - delay: 118
+    content: a
+  - delay: 130
+    content: l
+  - delay: 86
+    content: a
+  - delay: 170
+    content: 'n'
+  - delay: 225
+    content: ' '
+  - delay: 1267
+    content: v
+  - delay: 172
+    content: a
+  - delay: 120
+    content: l
+  - delay: 215
+    content: u
+  - delay: 93
+    content: r
+  - delay: 622
+    content: "\b \b"
+  - delay: 121
+    content: e
+  - delay: 321
+    content: s
+  - delay: 502
+    content: ' '
+  - delay: 639
+    content: I
+  - delay: 599
+    content: "\b \b"
+  - delay: 391
+    content: (
+  - delay: 780
+    content: i
+  - delay: 164
+    content: d
+  - delay: 1015
+    content: "\b \b"
+  - delay: 163
+    content: "\b \b"
+  - delay: 188
+    content: "\b \b"
+  - delay: 1227
+    content: (
+  - delay: 817
+    content: '1'
+  - delay: 286
+    content: ','
+  - delay: 117
+    content: '1'
+  - delay: 1051
+    content: ','
+  - delay: 2050
+    content: ''''
+  - delay: 445
+    content: '2'
+  - delay: 256
+    content: '0'
+  - delay: 125
+    content: '2'
+  - delay: 1001
+    content: '-'
+  - delay: 921
+    content: "\b \b"
+  - delay: 1387
+    content: '4'
+  - delay: 995
+    content: '-'
+  - delay: 1199
+    content: '0'
+  - delay: 541
+    content: '5'
+  - delay: 977
+    content: "-\r\n\e[36;64H-\r\n"
+  - delay: 347
+    content: '2'
+  - delay: 532
+    content: '0'
+  - delay: 188
+    content: '-'
+  - delay: 1551
+    content: "\b \b"
+  - delay: 635
+    content: ''''
+  - delay: 1075
+    content: )
+  - delay: 426
+    content: ','
+  - delay: 298
+    content: ' '
+  - delay: 445
+    content: (
+  - delay: 3791
+    content: '2'
+  - delay: 162
+    content: '0'
+  - delay: 84
+    content: '2'
+  - delay: 415
+    content: '4'
+  - delay: 717
+    content: '-'
+  - delay: 151
+    content: '2'
+  - delay: 620
+    content: "\b \b"
+  - delay: 478
+    content: '1'
+  - delay: 101
+    content: '2'
+  - delay: 1089
+    content: '-'
+  - delay: 2162
+    content: "\b \b"
+  - delay: 1345
+    content: '-'
+  - delay: 789
+    content: '2'
+  - delay: 164
+    content: '1'
+  - delay: 1156
+    content: ''''
+  - delay: 231
+    content: "\b"
+  - delay: 191
+    content: "\b"
+  - delay: 178
+    content: "\b"
+  - delay: 502
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 99
+    content: "\b"
+  - delay: 213
+    content: "\b"
+  - delay: 320
+    content: "\b"
+  - delay: 223
+    content: "\e[?25l'2024-12-21'\e[37;9H\e[?25h"
+  - delay: 320
+    content: "\e[1C"
+  - delay: 183
+    content: "\e[1C"
+  - delay: 166
+    content: "\e[1C"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 37
+    content: "\e[1C"
+  - delay: 76
+    content: "\e[1C"
+  - delay: 161
+    content: "\e[1C"
+  - delay: 369
+    content: "\e[1C"
+  - delay: 563
+    content: )
+  - delay: 1072
+    content: ','
+  - delay: 638
+    content: (
+  - delay: 749
+    content: '2'
+  - delay: 143
+    content: '-'
+  - delay: 763
+    content: "\b \b"
+  - delay: 369
+    content: '0'
+  - delay: 155
+    content: '2'
+  - delay: 152
+    content: '0'
+  - delay: 1023
+    content: "\b \b"
+  - delay: 335
+    content: '4'
+  - delay: 400
+    content: '-'
+  - delay: 1556
+    content: '0'
+  - delay: 1013
+    content: '5'
+  - delay: 2014
+    content: "\b"
+  - delay: 496
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 720
+    content: "\b"
+  - delay: 781
+    content: "\b"
+  - delay: 666
+    content: "\b"
+  - delay: 501
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 25
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 128
+    content: "\b"
+  - delay: 158
+    content: "\b"
+  - delay: 149
+    content: "\b"
+  - delay: 151
+    content: "\b"
+  - delay: 149
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 147
+    content: "\b"
+  - delay: 174
+    content: "\b"
+  - delay: 634
+    content: "\e[?25l2'2024-12-21'),(2024-05\e[37;9H\e[?25h"
+  - delay: 302
+    content: "\e[?25l,'2024-12-21'),(2024-05\e[37;10H\e[?25h"
+  - delay: 99
+    content: "\e[?25l2'2024-12-21'),(2024-05\e[37;11H\e[?25h"
+  - delay: 826
+    content: "\e[?25l,'2024-12-21'),(2024-05\e[37;12H\e[?25h"
+  - delay: 838
+    content: "\e[1C"
+  - delay: 502
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 25
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 85
+    content: "\e[1C"
+  - delay: 926
+    content: "\e[?25l32024-05\e[37;28H\e[?25h"
+  - delay: 418
+    content: "\e[?25l,2024-05\e[37;29H\e[?25h"
+  - delay: 99
+    content: "\e[?25l32024-05\e[37;30H\e[?25h"
+  - delay: 109
+    content: "\e[?25l,2024-05\e[37;31H\e[?25h"
+  - delay: 623
+    content: "\e[1C"
+  - delay: 498
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 232
+    content: "\e[1C"
+  - delay: 1988
+    content: '-'
+  - delay: 262
+    content: '2'
+  - delay: 154
+    content: '2'
+  - delay: 1297
+    content: ''''
+  - delay: 880
+    content: )
+  - delay: 2534
+    content: ;
+  - delay: 728
+    content: "\r\n"
+  - delay: 22
+    content: '    ''> '
+  - delay: 3170
+    content: ''''
+  - delay: 517
+    content: ;
+  - delay: 939
+    content: "\r\n"
+  - delay: 7
+    content: "ERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\r\n\e[36;64Hthe right syntax to use near '');\r\n'' at line 1"
+  - delay: 5
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 813
+    content: ''';'
+  - delay: 760
+    content: "\e[?25l\e[37;22Hinsert into penjualan values (1,1,'2024-05-\e[?25h\r\n\e[36;64H-20'), (2,2,'2024-12-21'),(3,3,2024-05-22');"
+  - delay: 411
+    content: "\b"
+  - delay: 499
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 132
+    content: "\b"
+  - delay: 189
+    content: "\b"
+  - delay: 184
+    content: "\b"
+  - delay: 321
+    content: "\b"
+  - delay: 460
+    content: "\e[?25l'2024-05-22');\e[37;32H\e[?25h"
+  - delay: 1070
+    content: "\r\nERROR 1136 (21S01): Column count doesn't match value count at ro\r\n\e[36;64How 1"
+  - delay: 23
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 1437
+    content: "insert into penjualan values (1,1,'2024-05-\r\n\e[36;64H-20'), (2,2,'2024-12-21'),(3,3,'2024-05-22');"
+  - delay: 5448
+    content: d
+  - delay: 167
+    content: e
+  - delay: 189
+    content: s
+  - delay: 894
+    content: "\b \b"
+  - delay: 1110
+    content: "\e[?25l\e[36;22H';                                         \r\n\e[46X\e[36;24H\e[?25h"
+  - delay: 899
+    content: "\b \b"
+  - delay: 157
+    content: "\b \b"
+  - delay: 582
+    content: d
+  - delay: 168
+    content: e
+  - delay: 165
+    content: s
+  - delay: 186
+    content: c
+  - delay: 632
+    content: ' '
+  - delay: 947
+    content: p
+  - delay: 167
+    content: e
+  - delay: 146
+    content: 'n'
+  - delay: 189
+    content: j
+  - delay: 166
+    content: u
+  - delay: 134
+    content: a
+  - delay: 115
+    content: l
+  - delay: 55
+    content: a
+  - delay: 220
+    content: 'n'
+  - delay: 490
+    content: ;
+  - delay: 122
+    content: "\r\n"
+  - delay: 41
+    content: "+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+\r\n| Field         | Type    | Null | Key | Default | Extra        \r\n\e[36;64H   |\r\n+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+"
+  - delay: 7
+    content: "\r\n| id_penjualan  | int(11) | NO   | PRI | NULL    | auto_incremen\r\n\e[36;64Hnt |"
+  - delay: 11
+    content: "\r\n| id_produk     | int(11) | YES  | MUL | NULL    |\e[3C           \e[37;76H\r\n  |"
+  - delay: 7
+    content: "\r\n| id_promo      | int(11) | YES  | MUL | NULL    |              \e[37;79H\r\n  |"
+  - delay: 11
+    content: "\r\n| tgl_transaksi | date    | YES  |     | NULL    |\e[6C        \r\n\e[36;64H   |\r\n+---------------+---------+------+-----+---------+--------------\r\n\e[36;64H---+\r\n4 rows in set (0.041 sec)\r\n"
+  - delay: 14
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 3868
+    content: desc penjualan;
+  - delay: 466
+    content: "\e[?25l\e[37;22Hinsert into penjualan values (1,1,'2024-05-\e[?25h\r\n\e[36;64H-20'), (2,2,'2024-12-21'),(3,3,'2024-05-22');"
+  - delay: 1569
+    content: "\b"
+  - delay: 496
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 144
+    content: "\b"
+  - delay: 181
+    content: "\b"
+  - delay: 124
+    content: "\b"
+  - delay: 503
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 24
+    content: "\b"
+  - delay: 104
+    content: "\b"
+  - delay: 178
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 162
+    content: "\b"
+  - delay: 145
+    content: "\b"
+  - delay: 168
+    content: "\b"
+  - delay: 152
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 28
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 33
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 26
+    content: "\b"
+  - delay: 31
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 34
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 24
+    content: "\b"
+  - delay: 106
+    content: "\b"
+  - delay: 500
+    content: "\b"
+  - delay: 29
+    content: "\b"
+  - delay: 96
+    content: "\b"
+  - delay: 154
+    content: "\r"
+  - delay: 147
+    content: "\e[?25l\e[36;64H\e[?25h"
+  - delay: 495
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 27
+    content: "\b"
+  - delay: 30
+    content: "\b"
+  - delay: 32
+    content: "\b"
+  - delay: 123
+    content: "\b"
+  - delay: 160
+    content: "\b"
+  - delay: 150
+    content: "\b"
+  - delay: 769
+    content: "\e[?25l1'2024-05-20'), (2,2,'2024-12-21'),(3,3,'2024-05-22');\e[36;57H\e[?25h"
+  - delay: 428
+    content: "\e[?25l,'2024-05-20'), (2,2,'2024-12-21'),(3,3,'2024-05-22');\e[36;58H\e[?25h"
+  - delay: 481
+    content: "\e[1C"
+  - delay: 500
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 28
+    content: "\r\n"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 34
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 26
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 1199
+    content: "\e[1C"
+  - delay: 183
+    content: "\e[?25l,'2024-12-21'),(3,3,'2024-05-22');\e[37;15H\e[?25h"
+  - delay: 1754
+    content: "\e[?25l\b'2024-12-21'),(3,3,'2024-05-22'); \e[37;14H\e[?25h"
+  - delay: 745
+    content: "\e[?25l2'2024-12-21'),(3,3,'2024-05-22');\e[37;15H\e[?25h"
+  - delay: 550
+    content: "\e[?25l,'2024-12-21'),(3,3,'2024-05-22');\e[37;16H\e[?25h"
+  - delay: 302
+    content: "\e[1C"
+  - delay: 500
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 28
+    content: "\e[1C"
+  - delay: 33
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 35
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 100
+    content: "\e[1C"
+  - delay: 141
+    content: "\e[1C"
+  - delay: 549
+    content: "\e[1C"
+  - delay: 174
+    content: "\e[1C"
+  - delay: 147
+    content: "\e[1C"
+  - delay: 158
+    content: "\e[1C"
+  - delay: 151
+    content: "\e[1C"
+  - delay: 329
+    content: "\e[1C"
+  - delay: 721
+    content: "\e[?25l3'2024-05-22');\e[37;36H\e[?25h"
+  - delay: 585
+    content: "\e[?25l,'2024-05-22');\e[37;37H\e[?25h"
+  - delay: 391
+    content: "\e[1C"
+  - delay: 497
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 27
+    content: "\e[1C"
+  - delay: 29
+    content: "\e[1C"
+  - delay: 31
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 30
+    content: "\e[1C"
+  - delay: 32
+    content: "\e[1C"
+  - delay: 26
+    content: "\e[1C"
+  - delay: 199
+    content: "\e[1C"
+  - delay: 479
+    content: "\r\n"
+  - delay: 14
+    content: "Query OK, 3 rows affected (0.011 sec)\r\nRecords: 3  Duplicates: 0  Warnings: 0\r\n\nMariaDB [flashsale]>\e[1C"
+  - delay: 2186
+    content: s
+  - delay: 186
+    content: e
+  - delay: 91
+    content: l
+  - delay: 78
+    content: e
+  - delay: 203
+    content: c
+  - delay: 211
+    content: t
+  - delay: 229
+    content: ' '
+  - delay: 367
+    content: '*'
+  - delay: 150
+    content: ' '
+  - delay: 214
+    content: f
+  - delay: 153
+    content: r
+  - delay: 110
+    content: o
+  - delay: 217
+    content: m
+  - delay: 125
+    content: ' '
+  - delay: 746
+    content: t
+  - delay: 241
+    content: a
+  - delay: 1112
+    content: b
+  - delay: 124
+    content: l
+  - delay: 190
+    content: '4'
+  - delay: 689
+    content: "\b \b"
+  - delay: 186
+    content: "\b \b"
+  - delay: 143
+    content: "\b \b"
+  - delay: 150
+    content: "\b \b"
+  - delay: 159
+    content: "\b \b"
+  - delay: 439
+    content: "\b \b"
+  - delay: 253
+    content: "\b \b"
+  - delay: 214
+    content: "\b \b"
+  - delay: 166
+    content: "\b \b"
+  - delay: 530
+    content: "\b \b"
+  - delay: 704
+    content: p
+  - delay: 187
+    content: e
+  - delay: 147
+    content: 'n'
+  - delay: 174
+    content: j
+  - delay: 174
+    content: u
+  - delay: 100
+    content: a
+  - delay: 137
+    content: l
+  - delay: 50
+    content: a
+  - delay: 181
+    content: 'n'
+  - delay: 600
+    content: ;
+  - delay: 415
+    content: "\r\nERROR 1064 (42000): You have an error in your SQL syntax; check \r\n\e[36;64H the manual that corresponds to your MariaDB server version for t\r\n\e[36;64Hthe right syntax to use near 'penjualan' at line 1"
+  - delay: 11
+    content: "\r\nMariaDB [flashsale]>\e[1C"
+  - delay: 1752
+    content: s
+  - delay: 199
+    content: e
+  - delay: 81
+    content: l
+  - delay: 81
+    content: e
+  - delay: 493
+    content: c
+  - delay: 245
+    content: t
+  - delay: 208
+    content: ' '
+  - delay: 630
+    content: '*'
+  - delay: 266
+    content: ' '
+  - delay: 193
+    content: f
+  - delay: 151
+    content: r
+  - delay: 90
+    content: o
+  - delay: 202
+    content: m
+  - delay: 141
+    content: ' '
+  - delay: 741
+    content: p
+  - delay: 118
+    content: e
+  - delay: 782
+    content: 'n'
+  - delay: 182
+    content: j
+  - delay: 185
+    content: u
+  - delay: 152
+    content: a
+  - delay: 123
+    content: l
+  - delay: 61
+    content: a
+  - delay: 177
+    content: 'n'
+  - delay: 871
+    content: ;
+  - delay: 128
+    content: "\r\n+--------------+-----------+----------+---------------+\r\n| id_penjualan | id_produk | id_promo | tgl_transaksi |\r\n+--------------+-----------+----------+---------------+"
+  - delay: 8
+    content: "\r\n|            1 |         1 |        1 | 2024-05-20    |"
+  - delay: 8
+    content: "\r\n|            2 |\e[4C     2 |        2 | 2024-12-21    |\r\n|            3 |         3 |        3 | 2024-05-22    |\r\n+--------------+-----------+----------+---------------+\r\n3 rows in set (0.001 sec)\r\n"
+  - delay: 11
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 1681
+    content: s
+  - delay: 871
+    content: "\b \b"
+  - delay: 335
+    content: s
+  - delay: 216
+    content: e
+  - delay: 115
+    content: l
+  - delay: 97
+    content: e
+  - delay: 599
+    content: c
+  - delay: 229
+    content: t
+  - delay: 223
+    content: ' '
+  - delay: 453
+    content: '*'
+  - delay: 133
+    content: ' '
+  - delay: 231
+    content: f
+  - delay: 154
+    content: r
+  - delay: 53
+    content: o
+  - delay: 195
+    content: m
+  - delay: 116
+    content: ' '
+  - delay: 731
+    content: p
+  - delay: 523
+    content: r
+  - delay: 132
+    content: o
+  - delay: 418
+    content: d
+  - delay: 161
+    content: u
+  - delay: 255
+    content: k
+  - delay: 863
+    content: ;
+  - delay: 98
+    content: ' '
+  - delay: 461
+    content: s
+  - delay: 173
+    content: e
+  - delay: 303
+    content: e
+  - delay: 558
+    content: "\b \b"
+  - delay: 277
+    content: l
+  - delay: 79
+    content: e
+  - delay: 234
+    content: c
+  - delay: 263
+    content: t
+  - delay: 223
+    content: ' '
+  - delay: 782
+    content: '*'
+  - delay: 132
+    content: ' '
+  - delay: 251
+    content: f
+  - delay: 136
+    content: r
+  - delay: 95
+    content: o
+  - delay: 226
+    content: m
+  - delay: 125
+    content: ' '
+  - delay: 1818
+    content: p
+  - delay: 112
+    content: r
+  - delay: 160
+    content: p
+  - delay: 799
+    content: "\b \b"
+  - delay: 302
+    content: o
+  - delay: 136
+    content: m
+  - delay: 85
+    content: o
+  - delay: 1022
+    content: ;
+  - delay: 103
+    content: " \r\n\e[36;64H \r\n"
+  - delay: 1075
+    content: s
+  - delay: 190
+    content: e
+  - delay: 118
+    content: l
+  - delay: 83
+    content: e
+  - delay: 208
+    content: c
+  - delay: 211
+    content: t
+  - delay: 217
+    content: ' '
+  - delay: 878
+    content: '*'
+  - delay: 197
+    content: ' '
+  - delay: 1048
+    content: f
+  - delay: 156
+    content: r
+  - delay: 143
+    content: o
+  - delay: 341
+    content: m
+  - delay: 348
+    content: ' '
+  - delay: 2523
+    content: p
+  - delay: 101
+    content: e
+  - delay: 213
+    content: 'n'
+  - delay: 188
+    content: j
+  - delay: 158
+    content: u
+  - delay: 113
+    content: a
+  - delay: 100
+    content: l
+  - delay: 73
+    content: a
+  - delay: 128
+    content: 'n'
+  - delay: 710
+    content: ;
+  - delay: 1208
+    content: "\r\n+-----------+-------------+------------+\r\n| id_produk | nama_produk | harga_asli |\r\n+-----------+-------------+------------+\r\n|         1 | iphone 15   |   15000000 |\r\n|         2 | macbook m2  |    3000000 |\r\n|         3 | airpods pro |    1500000 |\r\n+-----------+-------------+------------+\r\n3 rows in set (0.000 sec)\r\n\n+----------+---------------+---------------+\r\n| id_promo | nama_produk   | diskon_persen |\r\n+----------+---------------+---------------+\r\n|        1 | payday sale   |            10 |\r\n|        2 | midnight sale |            20 |\r\n|        3 | flashsale     |            50 |\r\n+----------+---------------+---------------+\r\n3 rows in set (0.001 sec)\r\n\n+--------------+-----------+----------+---------------+\r\n| id_penjualan | id_produk | id_promo | tgl_transaksi |\r\n+--------------+-----------+----------+---------------+\r\n|            1 |         1 |        1 | 2024-05-20    |\r\n|            2 |         2 |        2 | 2024-12-21    |\r\n|            3 |         3 |        3 | 2024-05-22    |\r\n+--------------+-----------+----------+---------------+\r\n3 rows in set (0.000 sec)\r\n"
+  - delay: 8
+    content: "\nMariaDB [flashsale]>\e[1C"
+  - delay: 5093
+    content: e
+  - delay: 339
+    content: x
+  - delay: 242
+    content: i
+  - delay: 225
+    content: t
+  - delay: 569
+    content: "\b \b"
+  - delay: 196
+    content: "\b \b"
+  - delay: 169
+    content: "\b \b"
+  - delay: 182
+    content: "\b \b"
+  - delay: 13934
+    content: e
+  - delay: 397
+    content: x
+  - delay: 161
+    content: i
+  - delay: 142
+    content: t
+  - delay: 921
+    content: ' '
+  - delay: 2698
+    content: "\b \b"
+  - delay: 784
+    content: "\r\nBye"
+  - delay: 12
+    content: "\r\n"
+  - delay: 117
+    content: 'PS C:\Users\baeba> '
+  - delay: 876
+    content: "\e[?25l"
+  - delay: 22
+    content: "\e[93me\e[?25h"
+  - delay: 264
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[93m\bex\e[?25h"
+  - delay: 206
+    content: "\e[m\e[?25l"
+  - delay: 11
+    content: "\e[93m\e[37;20Hexi\e[?25h"
+  - delay: 135
+    content: "\e[m\e[?25l"
+  - delay: 15
+    content: "\e[92m\e[37;20Hexit\e[?25h"
+  - delay: 1051
+    content: "\e[m"
+  - delay: 18
+    content: "\r\n"
